@@ -20,3 +20,13 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@mixin head2-big {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+@mixin head2-small {
+  font-size: 18px;
+  line-height: 30px;
+}
