@@ -1,4 +1,11 @@
+.about-us__title {
+  @include head2-big;
+}
+
 .about-us__list {
+  font-size: 17px;
+  line-height: 20px;
+  @include bold;
   list-style: none;
   margin: 0;
   padding: 0;
