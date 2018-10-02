@@ -8,3 +8,7 @@
   padding: 0;
   list-style: none;
 }
+
+.copyright__text {
+  @include head2-small;
+}
