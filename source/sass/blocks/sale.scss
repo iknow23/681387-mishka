@@ -1,15 +1,41 @@
 .sale__title-description {
+  @include bold;
+  font-size: 25px;
+  line-height: 30px;
   color: #000000;
 }
 
 .sale__title {
+  @include bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
   margin: 0;
   color: #63d1bb;
 }
 
+.sale__description {
+  color: $main-color;
+  line-height: 24px;
+}
+
+.sale__characteristics {
+  color: $main-color;
+  line-height: 20px;
+}
+
+.sale__price {
+  @include bold;
+  font-size: 17px;
+  color: $main-color;
+}
+
 .sale__button {
+  @include bold;
+  font-size: 17px;
+  line-height: 20px;
   padding: 15px 86px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
+  color: $main-color;
 }
