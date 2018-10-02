@@ -1,18 +1,27 @@
 .reviews {
-  color: #444444;
+  color: $main-color;
 }
 
 .reviews__title {
+  @include head2-big;
   color: #000000;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0;
 }
 
 .reviews__author-name {
+  @include bold;
   color: #000000;
+  font-size: 17px;
 }
 
 .reviews__write {
+  @include bold;
   padding: 15px 80px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: $main-color;
 }
