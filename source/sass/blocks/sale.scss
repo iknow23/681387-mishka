@@ -1,16 +1,16 @@
 .sale__title {
+  margin: 0;
   @include bold;
   @include head2-big;
   color: #000000;
-  margin: 0;
 }
 
 .sale__title-description {
   @include bold;
   font-size: 17px;
   line-height: 20px;
-  text-transform: uppercase;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .sale__description {

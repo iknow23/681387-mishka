@@ -19,9 +19,9 @@
 }
 
 .reviews__write {
-  @include bold;
   padding: 15px 80px;
+  @include bold;
+  color: $main-color;
   text-transform: uppercase;
   text-decoration: none;
-  color: $main-color;
 }
