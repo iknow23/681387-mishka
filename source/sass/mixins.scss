@@ -37,3 +37,10 @@
   line-height: 24px;
   font-weight: bold;
 }
+
+@mixin price-catalog-item {
+  color: #000000;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
