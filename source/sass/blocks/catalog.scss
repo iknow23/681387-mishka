@@ -27,3 +27,7 @@
 .catalog__product-title {
   @include head-catalog-item;
 }
+
+.catalog__price {
+  @include price-catalog-item;
+}
