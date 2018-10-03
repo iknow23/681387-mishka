@@ -31,10 +31,6 @@
 
 .sale__button {
   @include bold;
-  font-size: 17px;
   line-height: 20px;
-  padding: 15px 86px;
-  text-transform: uppercase;
-  text-decoration: none;
   color: $main-color;
 }

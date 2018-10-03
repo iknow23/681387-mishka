@@ -12,3 +12,10 @@
 .copyright__text {
   @include head2-small;
 }
+
+.copyright__text--catalog {
+  font-size: 19px;
+  line-height: 18px;
+  @include bold;
+  color: #000000;
+}

@@ -14,8 +14,5 @@
 .contacts__button {
   @include bold;
   color: $main-color;
-  padding: 15px 52px;
-  text-decoration: none;
-  text-transform: uppercase;
   margin-bottom: 40px;
 }
