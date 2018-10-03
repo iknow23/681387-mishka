@@ -16,6 +16,14 @@
   border: 1px solid #ececec;
 }
 
+.catalog__product-link {
+  text-decoration: none;
+}
+
 .catalog__image {
   width: 100%;
+}
+
+.catalog__product-title {
+  @include head-catalog-item;
 }
