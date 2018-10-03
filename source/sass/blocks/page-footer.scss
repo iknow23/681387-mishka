@@ -2,20 +2,3 @@
   min-height: 160px;
   background-color: #f1f1f1;
 }
-
-.social__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.copyright__text {
-  @include head2-small;
-}
-
-.copyright__text--catalog {
-  font-size: 19px;
-  line-height: 18px;
-  @include bold;
-  color: #000000;
-}
