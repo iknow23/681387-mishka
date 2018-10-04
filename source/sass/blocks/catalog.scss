@@ -1,0 +1,33 @@
+.catalog__title {
+  @include bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #f1f1f1;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  border: 1px solid #ececec;
+}
+
+.catalog__product-link {
+  text-decoration: none;
+}
+
+.catalog__image {
+  width: 100%;
+}
+
+.catalog__product-title {
+  @include head-catalog-item;
+}
+
+.catalog__price {
+  @include price-catalog-item;
+}

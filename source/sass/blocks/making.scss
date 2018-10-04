@@ -1,0 +1,12 @@
+.making__title {
+  @include head-catalog-item;
+}
+
+.making__description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.making__button {
+  line-height: 16px;
+}

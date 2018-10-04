@@ -1,0 +1,18 @@
+.contacts {
+  color: $main-color;
+}
+
+.contacts__title {
+  @include head2-small;
+  color: #000000;
+}
+
+.contacts__mail--current {
+  border-bottom: 1px solid #63d1bb;
+}
+
+.contacts__button {
+  margin-bottom: 40px;
+  @include bold;
+  color: $main-color;
+}
