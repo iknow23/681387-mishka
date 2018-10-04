@@ -8,26 +8,22 @@ body {
   font-size: 13px;
   color: $main-color;
 }
-
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/opensans.woff') format('woff'),
-       url('../fonts/opensans.woff2') format('woff2');
+  src: url("../fonts/opensans.woff2") format('woff2'), url("../fonts/opensans.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/opensansbold.woff') format('woff'),
-         url('../fonts/opensansbold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Open Sans';
+  src: url("../fonts/opensansbold.woff2") format('woff2'), url("../fonts/opensansbold.woff") format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 .visually-hidden {
-	position: absolute;
-	clip: rect(0 0 0 0);
+  position: absolute;
+  clip: rect(0 0 0 0);
 }
 
 .container {
