@@ -10,6 +10,12 @@
   font-style: normal;
 }
 
+@mixin indents-zero {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @mixin head2-big {
   font-size: 25px;
   line-height: 30px;
