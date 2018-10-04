@@ -15,34 +15,3 @@
   padding: 0;
   list-style: none;
 }
-
-@mixin head2-big {
-  font-size: 25px;
-  line-height: 30px;
-}
-
-@mixin head2-small {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-@mixin head-catalog-item {
-  color: #000000;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-@mixin price-catalog-item {
-  color: #000000;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
-@mixin fieldset-title {
-  color: #63d1bb;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-}
