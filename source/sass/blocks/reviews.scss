@@ -1,5 +1,7 @@
 .reviews {
+  padding: 0px 30px;
   color: $main-color;
+  padding: 0px 30px;
 }
 
 .reviews__title {
@@ -13,6 +15,10 @@
   padding: 0;
 }
 
+.reviews__text {
+  line-height: 30px;
+}
+
 .reviews__author-name {
   @include bold;
   color: #000000;
@@ -20,6 +26,7 @@
 }
 
 .reviews__write {
+  width: 175px;
   padding: 15px 80px;
   @include bold;
   color: $main-color;
@@ -28,9 +35,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding: 0px 50px;
+  }
 
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    padding: 0px 100px;
+  }
 
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

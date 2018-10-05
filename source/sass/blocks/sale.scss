@@ -49,6 +49,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .sale {
+    padding: 0px 50px;
+  }
+
   .sale__header {
     display: flex;
     justify-content: space-between;
@@ -89,6 +93,7 @@
 
 @media (min-width: $desktop-width) {
   .sale {
+    padding: 0px 100px;
     min-height: 805px;
   }
 
