@@ -1,10 +1,15 @@
+.main-nav {
+  min-height: 318px;
+}
+
 .main-nav__navigation {
-  padding: 0;
-  margin: 0;
+  @include indents-zero;
 }
 
 .main-nav__item {
   padding: 27px 94px 27px 32px;
+  border-top: 1px solid #d3d2d2;
+  border-bottom: 1px solid #d3d2d2;
 }
 
 .main-nav__item-link {
@@ -13,4 +18,26 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    min-height: 90px;
+  }
+
+  .main-nav__navigation {
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .main-nav__item:not(:last-of-type) {
+    margin-right: 10px;
+  }
 }

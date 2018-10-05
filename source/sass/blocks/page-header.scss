@@ -1,0 +1,19 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid blue;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    position: relative;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+
+  }
+}
