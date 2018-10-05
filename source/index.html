@@ -49,42 +49,63 @@
         </ul>
       </section>
 
-      <section class="sale container">
-        <h2 class="sale__title">Вязанные корзинки</h2>
-        <b class="sale__title-description">Товар недели</b>
-        <p class="sale__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
-        </p>
-        <table class="sale__characteristics">
-          <tr>
-            <td>Цвет:</td>
-            <td>"Тиффани"/серый</td>
-          </tr>
-          <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
-          </tr>
-        </table>
-        <img class="sale__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара недели - вязаные корзинки">
-        <p class="sale__price">Цена: 990 руб.</p>
-        <a class="sale__button btn" href="#">Заказать</a>
-      </section>
+      <div class="container">
+        <section class="sale">
+          <header class="sale__header">
+            <h2 class="sale__title">Вязаные корзинки</h2>
+            <b class="sale__title-description">Товар недели</b>
+          </header>
+          <div class="sale__offer">
+            <div class="sale__text">
+              <p class="sale__description">
+                Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах.
+              </p>
+              <table class="sale__characteristics">
+                <tr>
+                  <td>Цвет:</td>
+                  <td>"Тиффани"/серый</td>
+                </tr>
+                <tr>
+                  <td>Диаметр:</td>
+                  <td>25 см</td>
+                </tr>
+                <tr>
+                  <td>Высота:</td>
+                  <td>15 см</td>
+                </tr>
+              </table>
+              <img class="sale__image sale__image--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара недели - вязаные корзинки">
+              <p class="sale__price">Цена: 990 руб.</p>
+              <a class="sale__button btn" href="#">Заказать</a>
+            </div>
+            <div class="sale__img">
+              <img class="sale__image sale__image--tablet" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара недели - вязаные корзинки">
+            </div>
+          </div>
+        </section>
+      </div>
 
-      <section class="about-us">
-        <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item about-us__item--ecology">Экологически чистые материалы</li>
-          <li class="about-us__item about-us__item--cost">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item about-us__item--manually">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item about-us__item--native">Поддержка отечественного производителя</li>
-          <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="about-us">
+          <h2 class="about-us__title">Коротко о нас:</h2>
+          <ul class="about-us__list">
+            <li class="about-us__item-group">
+              <ul class="about-us__list-sub">
+                <li class="about-us__item about-us__item--ecology">Экологически чистые материалы</li>
+                <li class="about-us__item about-us__item--cost">Скандинавский стиль по российской цене</li>
+                <li class="about-us__item about-us__item--like">Увеличивает лайки на фотографиях</li>
+              </ul>
+            </li>
+            <li class="about-us__item-group">
+              <ul class="about-us__list-sub">
+                <li class="about-us__item about-us__item--manually">Связано вручную с любовью и умилением</li>
+                <li class="about-us__item about-us__item--native">Поддержка отечественного производителя</li>
+                <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <section class="reviews">
         <div class="reviews__wrapper slider">
