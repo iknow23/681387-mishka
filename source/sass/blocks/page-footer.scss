@@ -3,8 +3,25 @@
   background-color: #f1f1f1;
 }
 
-@media (min-width: $tablet-width) {
+.page-footer__logo {
+  display: none;
+}
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    min-height: 142px;
+  }
+
+  .page-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
