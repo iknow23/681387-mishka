@@ -1,7 +1,13 @@
 .filter {
+  padding: 0px 30px;
   font-size: 17px;
   line-height: 18px;
   @include bold;
+}
+
+.filter__form fieldset {
+  padding: 0;
+  border: none;
 }
 
 .filter__description {
@@ -12,12 +18,24 @@
 }
 
 .filter__button {
+  width: 100%;
   line-height: 16px;
   background-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
+  .filter {
+    padding: 0px 50px;
+  }
 
+  .filter__form fieldset {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter label {
+    font-size: 19px;
+  }
 }
 
 @media (min-width: $desktop-width) {

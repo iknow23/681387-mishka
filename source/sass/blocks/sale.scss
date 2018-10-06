@@ -1,5 +1,9 @@
 .sale {
   padding: 0px 30px;
+  padding-bottom: 50px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 
   outline: 1px solid blue;
 }
@@ -26,9 +30,19 @@
 }
 
 .sale__characteristics {
-  display: block;
   color: $main-color;
   line-height: 20px;
+}
+
+.sale__characteristics tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale__characteristics tr {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
 }
 
 .sale__price {
@@ -94,7 +108,6 @@
 @media (min-width: $desktop-width) {
   .sale {
     padding: 0px 100px;
-    min-height: 805px;
   }
 
   .sale__header {

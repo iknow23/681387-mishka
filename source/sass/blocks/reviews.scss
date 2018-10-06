@@ -1,7 +1,11 @@
 .reviews {
-  min-height: 640px;
   color: $main-color;
   padding: 0px 30px;
+  padding-bottom: 50px;
+  margin-bottom: 35px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .reviews__title {
@@ -40,7 +44,8 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 0px 50px;
-    min-height: 542px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   .reviews__wrapper {
@@ -79,6 +84,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding: 0px 100px;
+    padding-bottom: 50px;
   }
 
   .reviews__title {

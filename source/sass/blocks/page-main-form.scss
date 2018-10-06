@@ -22,7 +22,10 @@
   .page-main-form__title {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 75px;
+    padding: 87px 0px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 
   .page-main-form__description {

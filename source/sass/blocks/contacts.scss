@@ -1,5 +1,4 @@
 .contacts {
-  min-height: 895px;
   padding: 0px 30px;
   color: $main-color;
 
@@ -70,6 +69,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    min-height: 600px;
     position: relative;
     padding: 0px 100px;
   }
