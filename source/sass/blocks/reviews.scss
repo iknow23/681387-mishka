@@ -1,5 +1,5 @@
 .reviews {
-  padding: 0px 30px;
+  min-height: 640px;
   color: $main-color;
   padding: 0px 30px;
 }
@@ -25,9 +25,12 @@
   font-size: 17px;
 }
 
+.reviews__author-social {
+  display: block;
+}
+
 .reviews__write {
-  width: 175px;
-  padding: 15px 80px;
+  width: 260px;
   @include bold;
   color: $main-color;
   text-transform: uppercase;
@@ -37,6 +40,12 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 0px 50px;
+    min-height: 542px;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .reviews__title {
@@ -44,8 +53,26 @@
     line-height: 50px;
   }
 
+  .reviews__list {
+    order: 2;
+  }
+
   .reviews__text {
     font-size: 17px;
+  }
+
+  .reviews__write {
+    align-self: center;
+    margin-left: auto;
+    width: 168px;
+  }
+
+  .reviews__item-footer {
+    display: flex;
+  }
+
+  .reviews-nav{
+    margin-left: auto;
   }
 }
 
