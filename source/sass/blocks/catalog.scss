@@ -15,7 +15,10 @@
 }
 
 .catalog__list {
-  @include indents-zero;
+  width: 260px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
 }
 
 .catalog__item {
@@ -24,10 +27,6 @@
 
 .catalog__product-link {
   text-decoration: none;
-}
-
-.catalog__image {
-  width: 100%;
 }
 
 .catalog__product-title {
@@ -41,6 +40,12 @@
   padding: 0px 30px;
 }
 
+.catalog__item {
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+
 .catalog__price {
   color: #000000;
   font-size: 15px;
@@ -49,6 +54,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 55px;
+  }
+
   .catalog__title {
     font-size: 43px;
     line-height: 50px;
@@ -91,6 +100,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 60px;
+  }
+
   .catalog__title {
     font-size: 53px;
     line-height: 57px;
