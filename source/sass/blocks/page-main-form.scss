@@ -4,18 +4,40 @@
   line-height: 30px;
   color: #231f20;
   background-color: #f1f1f1;
+  padding: 75px 0px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .page-main-form__description {
+  width: 260px;
+  margin: 0 auto;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
 @media (min-width: $tablet-width) {
+  .page-main-form__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 75px;
+  }
 
+  .page-main-form__description {
+    width: 668px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main-form__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 125px;
+  }
 
+  .page-main-form__description {
+    width: 700px;
+  }
 }
