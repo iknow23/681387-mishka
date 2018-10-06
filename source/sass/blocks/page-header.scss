@@ -8,12 +8,16 @@
 @media (min-width: $tablet-width) {
   .page-header {
     position: relative;
+  }
 
+  .page-header__logo {
+    position: absolute;
+    left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-
+  .page-header__logo {
+    left: 50%;
   }
 }
