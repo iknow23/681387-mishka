@@ -1,5 +1,15 @@
 .making {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
   border: 1px solid #ececec;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.making__image {
+  position: absolute;
+  top: 95px;
 }
 
 .making__title {
@@ -7,6 +17,8 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  padding-left: 90px;
+  margin-bottom: 215px;
 }
 
 .making__description {
@@ -18,10 +30,56 @@
   line-height: 16px;
 }
 
-@media (min-width: $tablet-width) {
+.making__description {
+  padding: 0px 35px;
+}
 
+.making__button {
+  width: 190px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .making {
+    position: static;
+    width: 668px;
+    min-height: 740px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .making__image {
+    position: static;
+  }
+
+  .making__title {
+    order: 1;
+    padding-left: 105px;
+    margin-bottom: 0;
+  }
+
+  .making__description {
+    order: 2;
+    padding: 0px 40px;
+  }
+
+  .making__button {
+    order: 2;
+    width: 585px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .making {
+    flex-direction: row;
+    min-height: 455px;
+  }
 
+  .making-container {
+    width: 350px;
+  }
+
+  .making__button {
+    width: 230px;
+  }
 }
