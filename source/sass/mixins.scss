@@ -3,11 +3,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @mixin bold {
   font-family: 'Open Sans';
   font-weight: bold;
   font-style: normal;
 }
+
 @mixin indents-zero {
   margin: 0;
   padding: 0;

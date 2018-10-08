@@ -1,5 +1,13 @@
 .reviews {
   color: $main-color;
+  padding: 0px 30px;
+  padding-bottom: 50px;
+  margin-bottom: 35px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  outline: 1px solid blue;
 }
 
 .reviews__title {
@@ -13,16 +21,76 @@
   padding: 0;
 }
 
+.reviews__text {
+  line-height: 30px;
+}
+
 .reviews__author-name {
   @include bold;
   color: #000000;
   font-size: 17px;
 }
 
+.reviews__author-social {
+  display: block;
+}
+
 .reviews__write {
-  padding: 15px 80px;
+  width: 260px;
   @include bold;
   color: $main-color;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 0px 50px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__list {
+    order: 2;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+  }
+
+  .reviews__write {
+    align-self: center;
+    margin-left: auto;
+    width: 168px;
+  }
+
+  .reviews__item-footer {
+    display: flex;
+  }
+
+  .reviews-nav{
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding: 0px 100px;
+    padding-bottom: 50px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

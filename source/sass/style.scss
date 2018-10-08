@@ -1,7 +1,11 @@
+/*Подключаем переменные*/
 @import "variables.scss";
 @import "mixins.scss";
 @import "global.scss";
-
+@import "normalize.scss";
+/*Подключаем стили блоков главной страницы*/
+@import "blocks/container.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/products.scss";
 @import "blocks/sale.scss";
@@ -12,10 +16,10 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
-
+/*Подключаем стили блоков страницы каталога*/
 @import "blocks/catalog.scss";
 @import "blocks/making.scss";
-
+/*Подключаем стили блоков страницы заказа*/
 @import "blocks/page-main-form.scss";
 @import "blocks/filter.scss";
 @import "blocks/type.scss";

@@ -1,3 +1,13 @@
+.sale {
+  padding: 0px 30px;
+  padding-bottom: 50px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  outline: 1px solid blue;
+}
+
 .sale__title {
   margin: 0;
   @include bold;
@@ -24,14 +34,98 @@
   line-height: 20px;
 }
 
+.sale__characteristics tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale__characteristics tr {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
 .sale__price {
   @include bold;
   font-size: 17px;
   color: $main-color;
+  text-align: center;
 }
 
 .sale__button {
   @include bold;
   line-height: 20px;
   color: $main-color;
+}
+
+.sale__image--tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .sale {
+    padding: 0px 50px;
+  }
+
+  .sale__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sale__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .sale__title-description {
+    width: 115px;
+    text-align: center;
+    line-height: 17px;
+    align-self: flex-end;
+  }
+
+  .sale__offer {
+    display: flex;
+  }
+
+  .sale__text {
+    width: 334px;
+  }
+
+  .sale__image--mobile {
+    display: none;
+  }
+
+  .sale__image--tablet {
+    display: block;
+  }
+
+  .sale__button {
+    width: 290px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sale {
+    padding: 0px 100px;
+  }
+
+  .sale__header {
+    justify-content: flex-start;
+  }
+
+  .sale__title {
+    order: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .sale__offer {
+    justify-content: flex-end;
+  }
+
+  .sale__text {
+    width: 350px;
+  }
+
 }

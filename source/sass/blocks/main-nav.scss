@@ -1,10 +1,17 @@
+.main-nav__button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .main-nav__navigation {
-  padding: 0;
-  margin: 0;
+  @include indents-zero;
 }
 
 .main-nav__item {
   padding: 27px 94px 27px 32px;
+  border-top: 1px solid #d3d2d2;
+  border-bottom: 1px solid #d3d2d2;
 }
 
 .main-nav__item-link {
@@ -13,4 +20,35 @@
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    padding: 0px 50px;
+  }
+
+  .main-nav__button {
+    display: none;
+  }
+
+  .main-nav__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .main-nav__item:not(:last-of-type) {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding: 0px 100px;
+  }
 }

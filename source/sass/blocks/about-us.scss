@@ -1,10 +1,22 @@
+.about-us {
+  padding: 0px 30px;
+
+  outline: 1px solid pink;
+}
+
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
 }
 
-.about-us__list {
+.about-us__list,
+.about-us__list-sub {
   @include indents-zero;
+}
+
+.about-us__list {
+  display: flex;
+  flex-direction: column;
   font-size: 17px;
   line-height: 20px;
   @include bold;
@@ -13,6 +25,7 @@
 .about-us__item {
   padding-top: 80px;
   background-repeat: no-repeat;
+  background-position: 10px 30px;
 }
 
 .about-us__item--ecology {
@@ -37,4 +50,35 @@
 
 .about-us__item--gift {
   background-image: url("../img/icon-feature-gift.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 0px 50px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    flex-direction: row;
+  }
+
+  .about-us__item-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding: 0px 100px;
+  }
 }
