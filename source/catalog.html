@@ -12,7 +12,7 @@
       <a class="page-header__logo logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании" >
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__button" type="button" aria-label="Открыть меню/закрыть меню"></button>
         <ul class="main-nav__navigation">
           <li class="main-nav__item">
@@ -144,6 +144,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__button');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
 
   </body>
 </html>

@@ -2,9 +2,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 400px;
 
   outline: 1px solid blue;
+}
+
+.page-header__logo {
+  text-align: center;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header__comment {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,10 +31,20 @@
     position: absolute;
     left: 50px;
   }
+
+  .page-header__comment {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    line-height: 24px;
+    color: $main-color;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
     left: 50%;
+    margin-left: -75px;
   }
 }

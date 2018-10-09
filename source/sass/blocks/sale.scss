@@ -1,15 +1,20 @@
 .sale {
   padding: 0px 30px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  margin-bottom: 28px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
+}
 
-  outline: 1px solid blue;
+.sale__header {
+  margin-bottom: 25px;
 }
 
 .sale__title {
   margin: 0;
+  margin-bottom: 4px;
   @include bold;
   font-size: 25px;
   line-height: 30px;
@@ -25,13 +30,17 @@
 }
 
 .sale__description {
+  margin: 0;
+  margin-bottom: 22px;
   color: $main-color;
   line-height: 24px;
 }
 
 .sale__characteristics {
+  display: block;
   color: $main-color;
   line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .sale__characteristics tbody {
@@ -40,12 +49,33 @@
 }
 
 .sale__characteristics tr {
+  padding-top: 2px;
+  padding-bottom: 6px;
+  margin-bottom: 7px;
   display: block;
   width: 100%;
   border-bottom: 1px solid #ececec;
 }
 
+.sale__color {
+  padding-right: 52px;
+}
+
+.sale__size {
+  padding-right: 24px;
+}
+
+.sale__height {
+  padding-right: 35px;
+}
+
+.sale__image {
+  margin-bottom: 24px;
+}
+
 .sale__price {
+  margin: 0;
+  margin-bottom: 28px;
   @include bold;
   font-size: 17px;
   color: $main-color;
