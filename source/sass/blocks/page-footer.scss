@@ -3,8 +3,20 @@
   background-color: #f1f1f1;
 }
 
+.page-footer .container {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .page-footer__logo {
   display: none;
+}
+
+.page-footer__social {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0px;
 }
 
 @media (min-width: $tablet-width) {
