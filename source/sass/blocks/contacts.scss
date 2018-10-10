@@ -60,21 +60,46 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding: 0px 50px;
+    padding-bottom: 56px;
   }
 
   .contacts__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 50px;
   }
 
   .contacts__information {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     font-size: 17px;
+    min-height: auto;
+    margin-bottom: 568px;
   }
 
-  .contacts__table-row {
-    width: 310px;
+  .contacts__table-row:first-of-type {
+    width: 280px;
+    align-self: flex-start;
+  }
+
+  .contacts__table-row:last-of-type {
+    width: 334px;
+    justify-content: flex-start;
+  }
+
+  .contacts__adress:nth-of-type(2) {
+    width: 230px;
+  }
+
+  .contacts__adress {
+    margin-right: 26px;
+  }
+
+  .contacts__map {
+    width: 100%;
+    top: 246px;
+    margin: 0;
   }
 
   .contacts__button {
