@@ -1,31 +1,49 @@
 .contacts {
+  position: relative;
   padding: 0px 30px;
   color: $main-color;
-
-  outline: 1px solid pink;
 }
 
 .contacts__title {
+  margin: 0;
+  margin-bottom: 26px;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
 }
 
 .contacts__information {
-  display: table;
+  margin-bottom: 532px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .contacts__table-row {
-  display: table-row;
+  display: flex;
+  justify-content: space-between;
   @include indents-zero;
+  line-height: 30px;
+}
 
-  li {
-    display: table-cell;
-  }
+.contacts__adress:nth-of-type(2) {
+  width: 182px;
 }
 
 .contacts__mail--current {
   border-bottom: 1px solid #63d1bb;
+}
+
+.contacts__mail-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 258px;
+  left: 0;
 }
 
 .contacts__map-image {
