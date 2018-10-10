@@ -2,8 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  outline: 1px solid blue;
 }
 
 .page-header__logo {
@@ -29,6 +27,7 @@
 
   .page-header__logo {
     position: absolute;
+    z-index: 3;
     left: 50px;
   }
 
