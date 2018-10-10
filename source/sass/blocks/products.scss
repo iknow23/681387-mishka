@@ -130,13 +130,21 @@
 
 @media (min-width: $desktop-width) {
   .products {
-    margin-bottom: 70px;
+    padding-top: 152px;
+    margin-bottom: 122px;
     background-image: url("../img/hero-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .products__title {
-    margin-bottom: 240px;
+    margin-bottom: 180px;
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .products__link--interior::after {
+    top: 0;
+    right: -204px;
   }
 }

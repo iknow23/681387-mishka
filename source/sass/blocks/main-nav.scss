@@ -177,7 +177,20 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    padding: 0px 100px;
+    padding: 0px 50px;
+  }
+
+  .main-nav__item:not(:last-of-type) {
+    margin-right: 0;
+  }
+
+  .main-nav__item {
+    padding: 32px 2px 32px 34px;
+  }
+
+  .main-nav__item:nth-child(1)  {
+    padding: 32px 36px 32px 0px;
+    border-right: 1px solid #ececec;
   }
 
   .main-nav__item:nth-child(1),
@@ -189,4 +202,15 @@
   .main-nav__item:nth-child(2) .main-nav__item-link {
     font-size: 17px;
   }
+
+  .main-nav__item-search {
+    top: 0px;
+    left: -96px;
+    border: 1px solid #ececec;
+  }
+
+  .main-nav__item-basket {
+    top: 34px;
+    left: -18px;
+}
 }
