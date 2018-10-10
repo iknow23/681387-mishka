@@ -69,15 +69,18 @@
 @media (min-width: $tablet-width) {
   .about-us {
     padding: 0px 50px;
+    margin-bottom: 134px;
   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 18px;
   }
 
   .about-us__list {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .about-us__item-group {
@@ -88,6 +91,31 @@
   .about-us__item {
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 28px;
+  }
+
+  .about-us__item-group:first-child .about-us__list-sub {
+    width: 250px;
+  }
+
+  .about-us__item-group:last-child .about-us__list-sub {
+    width: 334px;
+  }
+
+  .about-us__item--ecology {
+    width: 230px;
+  }
+
+  .about-us__item--like {
+    width: 220px;
+  }
+
+  .about-us__item--manually {
+    width: 260px;
+  }
+
+  .about-us__item--gift {
+    width: 250px;
   }
 }
 
