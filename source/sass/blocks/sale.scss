@@ -158,7 +158,10 @@
 
 @media (min-width: $desktop-width) {
   .sale {
-    padding: 0px 100px;
+    position: relative;
+    padding: 0px 50px;
+    padding-bottom: 96px;
+    margin-bottom: 60px;
   }
 
   .sale__header {
@@ -166,17 +169,46 @@
   }
 
   .sale__title {
+    padding-left: 22px;
     order: 2;
     font-size: 53px;
     line-height: 57px;
   }
 
+  .sale__title-description {
+    padding-left: 26px;
+  }
+
   .sale__offer {
-    justify-content: flex-end;
+    position: static;
+    justify-content: flex-start;
+    margin-left: 176px;
+    width: 292px;
   }
 
   .sale__text {
     width: 350px;
+  }
+
+  .sale__description {
+    margin-bottom: 52px;
+  }
+
+  .sale__characteristics {
+    margin-bottom: 102px;
+  }
+
+  .sale__price {
+    padding-right: 2px;
+  }
+
+  .sale__image {
+    width: 525px;
+    height: 636px;
+    position: absolute;
+    top: -60px;
+    right: 50px;
+    z-index: -1;
   }
 
 }

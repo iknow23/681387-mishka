@@ -121,6 +121,23 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    padding: 0px 100px;
+    padding: 0px 50px;
+    margin-bottom: 62px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 170px;
+  }
+
+  .about-us__list {
+    justify-content: center;
+  }
+
+  .about-us__item-group:first-of-type .about-us__list-sub {
+    margin-right: 100px;
+    padding-right: -29px;
+    margin-left: -16px;
   }
 }
