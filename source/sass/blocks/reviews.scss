@@ -63,6 +63,16 @@
   border: 1px solid #ececec;
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews-nav__prev {

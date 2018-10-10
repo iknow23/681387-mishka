@@ -9,6 +9,10 @@
 .copyright__text {
   font-size: 18px;
   line-height: 30px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text--catalog {
