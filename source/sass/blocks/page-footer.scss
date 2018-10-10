@@ -39,5 +39,14 @@
 
   .page-footer__social {
     padding: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer .container {
+    width: 1050px;
+    align-items: baseline;
+    padding-top: 48px;
   }
 }
