@@ -2,15 +2,16 @@
   color: $main-color;
   padding: 0px 30px;
   padding-bottom: 50px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: bottom;
-
-  outline: 1px solid blue;
+  background-size: contain;
 }
 
 .reviews__title {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
@@ -23,24 +24,53 @@
 
 .reviews__text {
   line-height: 30px;
+  margin-bottom: 32px;
 }
 
 .reviews__author-name {
+  display: block;
+  margin-bottom: 34px;
   @include bold;
   color: #000000;
   font-size: 17px;
 }
 
 .reviews__author-social {
+  margin-top: 10px;
   display: block;
 }
 
 .reviews__write {
-  width: 260px;
   @include bold;
   color: $main-color;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.reviews-nav {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.reviews-nav__prev,
+.reviews-nav__next {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  border: 1px solid #ececec;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews-nav__prev {
+  background-image: url("../img/icon-left-arrow.svg");
+}
+
+.reviews-nav__next {
+  background-image: url("../img/icon-right-arrow.svg");
 }
 
 @media (min-width: $tablet-width) {
