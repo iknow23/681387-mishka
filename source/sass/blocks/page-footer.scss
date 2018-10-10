@@ -25,12 +25,19 @@
   }
 
   .page-footer .container {
+    width: 668px;
+    padding: 0px 50px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    padding-top: 62px;
   }
 
   .page-footer__logo {
     display: block;
+  }
+
+  .page-footer__social {
+    padding: 0;
   }
 }

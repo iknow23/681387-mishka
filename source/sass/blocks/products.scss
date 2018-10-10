@@ -9,6 +9,7 @@
 }
 
 .products__title {
+  padding: 0px 30px;
   @include bold;
   font-size: 27px;
   line-height: 30px;
@@ -18,6 +19,7 @@
 
 .products__title--new-row {
   display: block;
+  padding: 0;
 }
 
 .products__list {
