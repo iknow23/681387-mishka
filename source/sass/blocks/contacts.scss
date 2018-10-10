@@ -112,28 +112,62 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    min-height: 600px;
     position: relative;
-    padding: 0px 100px;
+    padding: 0px 50px;
+    padding-bottom: 102px;
   }
 
   .contacts__title {
+    position: relative;
     font-size: 53px;
     line-height: 57px;
+    margin-left: 170px;
+    margin-top: 140px;
+  }
+
+  .contacts__title::before {
+    content: "";
+
+    position: absolute;
+    top: -8px;
+    left: -108px;
+
+    width: 47px;
+    height: 81px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
   }
 
   .contacts__information {
     display: block;
     width: 350px;
+    margin-left: 174px;
+    margin-bottom: 80px;
+  }
+
+  .contacts__table-row:first-of-type {
+    margin-bottom: 30px;
   }
 
   .contacts__button {
     margin: 0;
+    margin-left: 172px;
   }
 
   .contacts__map {
+    top: 0;
+  }
+
+  .contacts__map .contacts__map-image {
     position: absolute;
     right: 0;
-    top: 0;
+    top: -70px;
+    padding-right: 50px;
+  }
+
+  .contacts__map-image {
+    width: 525px;
+    height: 427px;
   }
 }
