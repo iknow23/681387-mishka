@@ -147,7 +147,7 @@
   }
 
   .main-nav__item:nth-child(2) {
-    left: 250px;
+    left: 218px;
   }
 
   .main-nav__item:nth-child(3) {
@@ -163,13 +163,15 @@
   }
 
   .main-nav__item-search {
-    top: 5px;
-    left: -30px;
+    top: -32px;
+    left: -122px;
+    padding: 35px 32px;
+    border: 1px solid #ececec;
   }
 
   .main-nav__item-basket {
-    top: 5px;
-    left: -30px;
+    top: 4px;
+    left: -52px;
   }
 }
 

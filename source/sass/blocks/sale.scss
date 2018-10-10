@@ -95,9 +95,12 @@
 @media (min-width: $tablet-width) {
   .sale {
     padding: 0px 50px;
+    margin-bottom: 52px;
+    padding-bottom: 66px;
   }
 
   .sale__header {
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
   }
@@ -105,33 +108,51 @@
   .sale__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 0;
   }
 
   .sale__title-description {
     width: 115px;
     text-align: center;
     line-height: 17px;
-    align-self: flex-end;
+    align-self: center;
+    padding-right: 6px;
+    padding-top: 6px;
   }
 
   .sale__offer {
+    position: relative;
     display: flex;
+    justify-content: sale__offer;
   }
 
   .sale__text {
-    width: 334px;
+    width: 290px;
+  }
+
+  .sale__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 42px;
   }
 
   .sale__image--mobile {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 8px;
+    width: 333px;
+    height: 404px;
   }
 
-  .sale__image--tablet {
-    display: block;
+  .sale__characteristics {
+    margin-bottom: 48px;
   }
 
-  .sale__button {
-    width: 290px;
+  .sale__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
   }
 }
 
