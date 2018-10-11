@@ -1,6 +1,71 @@
+.type {
+  margin-bottom: 43px;
+}
+
+.type__group {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
 .type__title {
   color: #63d1bb;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  margin-bottom: 34px;
+}
+
+.type__group label {
+  display: block;
+  padding-left: 62px;
+  padding-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.type__input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -2px;
+
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid $main-color;
+  border-radius: 50%;
+}
+
+.type__input-radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 13px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/radio-on.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*фон для отключенной НЕ отмеченной радиокопки*/
+.type__input-radio:disabled + label::before,
+.type__input-radio:disabled + label::after {
+	opacity: 0.4;
+}
+
+.type__input-radio + label:hover::before,
+.type__input-radio + label:focus::before {
+	border: 2px solid #62d1ba;
+}
+
+.type__input-radio + label:active::before {
+  border: 2px solid $main-color;
+	opacity: 0.3;
 }

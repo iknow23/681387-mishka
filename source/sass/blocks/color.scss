@@ -1,6 +1,25 @@
+.color {
+  margin-bottom: 43px;
+}
+
+.color__group {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 43px;
+  }
+}
+
 .color__title {
   color: #63d1bb;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  margin-bottom: 37px;
+}
+
+.color label {
+  display: block;
+  padding-left: 62px;
+  padding-right: 20px;
 }

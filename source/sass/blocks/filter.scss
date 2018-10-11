@@ -9,6 +9,24 @@
 .filter__form fieldset {
   padding: 0;
   border: none;
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 60px;
+
+    width: 200px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+}
+
+.filter label {
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .filter__description {

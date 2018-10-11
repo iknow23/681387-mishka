@@ -12,7 +12,7 @@
       <a class="page-header__logo logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип компании" >
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__button" type="button" aria-label="Открыть меню/закрыть меню"></button>
         <ul class="main-nav__navigation">
           <li class="main-nav__item">
@@ -50,13 +50,13 @@
         <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="type">
             <legend class="type__title">Тип</legend>
-            <div class="filter__group">
+            <div class="type__filter-group">
               <p class="type__group">
-                <input type="radio" id="accessory" name="type" value="accessory-for-interior" checked>
+                <input class="visually-hidden type__input type__input-radio" type="radio" id="accessory" name="type" value="accessory-for-interior" checked>
                 <label for="accessory">Аксессуар для интерьера</label>
               </p>
               <p class="type__group">
-                <input type="radio" id="toy" name="type" value="baby-toy">
+                <input class="visually-hidden type__input type__input-radio" type="radio" id="toy" name="type" value="baby-toy">
                 <label for="toy">Детская игрушка</label>
               </p>
             </div>
@@ -64,29 +64,29 @@
 
           <fieldset class="color">
             <legend class="color__title">Цвет</legend>
-            <div class="filter__group">
+            <div class="color__filter-group">
               <p class="color__group">
-                <input type="checkbox" id="white" name="white" value="white" checked>
+                <input class="visually-hidden color__input color__input-checkbox" type="checkbox" id="white" name="white" value="white" checked>
                 <label for="white">Белый</label>
               </p>
               <p class="color__group">
-                <input type="checkbox" id="grey" name="grey" value="grey" checked>
+                <input class="visually-hidden color__input color__input-checkbox" type="checkbox" id="grey" name="grey" value="grey" checked>
                 <label for="grey">Серый</label>
               </p>
               <p class="color__group">
-                <input type="checkbox" id="tiffany" name="tiffany" value="tiffany">
-                <label for="tiffany">"Тиффани"</label>
+                <input class="visually-hidden color__input color__input-checkbox" type="checkbox" id="tiffany" name="tiffany" value="tiffany">
+                <label for="tiffany">«Тиффани»</label>
               </p>
               <p class="color__group">
-                <input type="checkbox" id="black" name="black" value="black">
+                <input class="visually-hidden color__input color__input-checkbox" type="checkbox" id="black" name="black" value="black">
                 <label for="black">Черный</label>
               </p>
               <p class="color__group">
-                <input type="checkbox" id="pink" name="pink" value="pink">
+                <input class="visually-hidden color__input color__input-checkbox" type="checkbox" id="pink" name="pink" value="pink">
                 <label for="pink">Розовый</label>
               </p>
               <p class="color__group">
-                <input type="checkbox" id="orange" name="orange" value="orange">
+                <input class="visually-hidden color__input color__input-checkbox" type="checkbox" id="orange" name="orange" value="orange">
                 <label for="orange">Оранжевый</label>
               </p>
             </div>
@@ -94,7 +94,7 @@
 
           <fieldset class="contact">
             <legend class="contact__title">ФИО</legend>
-            <div class="filter__group">
+            <div class="contact__filter-group">
               <p class="contact__group">
                 <label for="first-name">Имя:</label>
                 <input type="text" id="first-name" placeholder="Введите ваше имя*" required>

@@ -19,23 +19,6 @@
   margin-bottom: 24px;
 }
 
-fieldset {
-  position: relative;
-  margin: 0;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: 8px;
-    left: 60px;
-
-    width: 200px;
-    height: 1px;
-    background-color: #63d1bb;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .page-main-form__title {
     font-size: 43px;
