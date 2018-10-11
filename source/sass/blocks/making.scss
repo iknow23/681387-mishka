@@ -65,21 +65,37 @@
     width: 668px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 45px;
+    margin-bottom: 62px;
   }
 
   .making__image {
     position: static;
+    width: 668px;
+    height: 455px;
+    margin-bottom: 36px;
   }
 
   .making__title {
+    font-size: 20px;
+    line-height: 24px;
     order: 1;
     padding-left: 105px;
-    margin-bottom: 0;
+    margin: 0;
+    margin-bottom: 34px;
+
+    &::before {
+      top: -4px;
+      left: 42px;
+    }
   }
 
   .making__description {
+    font-size: 15px;
+    line-height: 30px;
     order: 2;
     padding: 0px 40px;
+    margin-bottom: 35px;
   }
 
   .making__button {
