@@ -68,3 +68,13 @@
   border: 2px solid $main-color;
 	opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .color {
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
