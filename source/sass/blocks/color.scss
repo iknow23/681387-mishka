@@ -22,4 +22,49 @@
   display: block;
   padding-left: 62px;
   padding-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.color__input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -2px;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid $main-color;
+}
+
+.color__input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 8px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*фон для отключенного НЕ отмеченного чекбокса*/
+.color__input-checkbox:disabled + label::before,
+.color__input-checkbox:disabled + label::after {
+	opacity: 0.4;
+}
+
+.color__input-checkbox + label:hover::before,
+.color__input-checkbox + label:focus::before {
+	border: 2px solid #62d1ba;
+}
+
+.color__input-checkbox + label:active::before {
+  border: 2px solid $main-color;
+	opacity: 0.3;
 }

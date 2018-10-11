@@ -1,11 +1,30 @@
+.contact {
+  margin-bottom: 13px;
+}
+
 .contact__title {
   color: #63d1bb;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact__group {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contact__group label {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .contact input {
   display: block;
   width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 18px;
 }

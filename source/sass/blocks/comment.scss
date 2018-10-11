@@ -1,12 +1,21 @@
+.comment {
+  margin-bottom: 16px;
+}
+
 .comment__title {
   color: #63d1bb;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  margin-bottom: 27px;
 }
 
+.comment__group {
+  margin: 0;
+}
 
 .comment textarea {
   display: block;
   width: 100%;
+  min-height: 135px;
 }

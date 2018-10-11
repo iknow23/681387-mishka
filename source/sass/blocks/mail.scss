@@ -1,3 +1,7 @@
+.mail {
+  margin-bottom: 16px;
+}
+
 .mail__title {
   color: #63d1bb;
   font-size: 17px;
@@ -8,4 +12,8 @@
 .mail input {
   display: block;
   width: 100%;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 18px;
 }

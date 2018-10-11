@@ -7,6 +7,8 @@
 }
 
 .filter__form fieldset {
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
   border: none;
   position: relative;
@@ -24,16 +26,22 @@
   }
 }
 
+.filter legend {
+  text-transform: uppercase;
+}
+
 .filter label {
   font-size: 17px;
   line-height: 18px;
 }
 
 .filter__description {
+  margin: 0;
   font-size: 14px;
   line-height: 16px;
   color: $main-color;
   @include normal;
+  margin-bottom: 32px;
 }
 
 .filter__button {
@@ -51,6 +59,10 @@
   .filter__form fieldset {
     display: flex;
     flex-direction: row;
+
+    &::before {
+      display: none;
+    }
   }
 
   .filter label {
