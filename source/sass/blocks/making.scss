@@ -108,13 +108,37 @@
   .making {
     width: 1050px;
     flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
   }
 
   .making-container {
-    width: 350px;
+    width: 290px;
+    padding-top: 93px;
+  }
+
+  .making__image {
+    width: 682px;
+    margin-bottom: 0;
+  }
+
+  .making__title {
+    padding-left: 0;
+    padding-right: 60px;
+
+    &::before {
+      top: -52px;
+      left: 2px;
+    }
+  }
+
+  .making__description {
+    padding: 0;
+    margin-bottom: 48px;
   }
 
   .making__button {
     width: 230px;
+    margin: 0;
   }
 }
