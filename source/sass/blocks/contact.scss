@@ -63,5 +63,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contact {
+    padding-left: 60px;
+    padding-right: 174px;
+  }
 
+  .contact__title {
+    margin-right: 74px;
+  }
 }

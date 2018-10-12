@@ -65,5 +65,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .tel {
+    padding-left: 62px;
+    padding-right: 175px;
+  }
 
+  .tel__title {
+    margin-right: 81px;
+  }
+
+  .tel__icon {
+    right: 6px;
+    top: 7px;
+  }
 }

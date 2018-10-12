@@ -114,5 +114,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .color {
+    padding-right: 124px;
+    padding-left: 60px;
+  }
 
+  .color__title {
+    margin-right: 88px;
+    margin-left: 0;
+  }
 }

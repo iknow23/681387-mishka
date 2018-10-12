@@ -36,9 +36,20 @@
     padding-top: 14px;
     padding-left: 12px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
+  .comment {
+    padding-left: 62px;
+    padding-right: 175px;
+    margin-bottom: 47px;
+  }
 
+  .comment__title {
+    margin-right: 61px;
+  }
+
+  .comment textarea {
+    width: 700px;
+  }
 }

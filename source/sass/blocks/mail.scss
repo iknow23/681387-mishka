@@ -67,5 +67,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .mail {
+    padding-left: 62px;
+    padding-right: 175px;
+  }
 
+  .mail__title {
+    margin-right: 61px;
+  }
+
+  .mail__icon {
+    right: 6px;
+    top: 7px;
+  }
 }
