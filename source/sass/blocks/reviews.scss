@@ -1,8 +1,8 @@
 .reviews {
-  color: $main-color;
+  margin-bottom: 36px;
   padding: 0px 30px;
   padding-bottom: 50px;
-  margin-bottom: 36px;
+  color: $main-color;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -23,21 +23,21 @@
 }
 
 .reviews__text {
-  line-height: 30px;
   margin-bottom: 32px;
+  line-height: 30px;
 }
 
 .reviews__author-name {
   display: block;
   margin-bottom: 34px;
+  font-size: 17px;
   @include bold;
   color: #000000;
-  font-size: 17px;
 }
 
 .reviews__author-social {
-  margin-top: 10px;
   display: block;
+  margin-top: 10px;
 }
 
 .reviews__write {
@@ -48,18 +48,18 @@
 }
 
 .reviews-nav {
+  display: flex;
   width: 100%;
   margin: 0;
   margin-bottom: 40px;
-  display: flex;
 }
 
 .reviews-nav__prev,
 .reviews-nav__next {
   flex-grow: 1;
-  border: none;
-  background-color: transparent;
   height: 50px;
+  background-color: transparent;
+  border: none;
   border: 1px solid #ececec;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,10 +85,10 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
+    margin-bottom: 62px;
     padding: 0px 50px;
     padding-bottom: 130px;
     padding-top: 78px;
-    margin-bottom: 62px;
     background-image:
       url("../img/review@1x.jpg"),
       url(../img/bg-zigzag-line.svg);
@@ -109,9 +109,9 @@
   }
 
   .reviews__title {
+    margin-bottom: 48px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 48px;
   }
 
   .reviews__list {
@@ -126,15 +126,15 @@
 
   .reviews__write {
     align-self: flex-start;
-    margin-left: auto;
     width: 170px;
+    margin-left: auto;
   }
 
   .reviews__author-name {
-    font-size: 18px;
-    line-height: 24px;
     width: 450px;
     margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .reviews__author-social {
@@ -149,10 +149,10 @@
   }
 
   .reviews-nav{
+    align-self: center;
+    width: 175px;
     margin-left: auto;
     margin-bottom: 0;
-    width: 175px;
-    align-self: center;
   }
 
   .reviews-nav__prev,
@@ -163,9 +163,9 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    margin-bottom: 72px;
     padding: 0px 50px;
     padding-bottom: 184px;
-    margin-bottom: 72px;
   }
 
   .reviews__title {
@@ -184,7 +184,7 @@
   }
 
   .reviews__text {
-    padding-right: 100px;
     margin-bottom: 40px;
+    padding-right: 100px;
   }
 }

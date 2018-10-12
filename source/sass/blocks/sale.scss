@@ -1,7 +1,7 @@
 .sale {
+  margin-bottom: 28px;
   padding: 0px 30px;
   padding-bottom: 40px;
-  margin-bottom: 28px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -22,9 +22,9 @@
 }
 
 .sale__title-description {
-  @include bold;
   font-size: 17px;
   line-height: 20px;
+  @include bold;
   color: #63d1bb;
   text-transform: uppercase;
 }
@@ -38,9 +38,9 @@
 
 .sale__characteristics {
   display: block;
-  color: $main-color;
-  line-height: 20px;
   margin-bottom: 20px;
+  line-height: 20px;
+  color: $main-color;
 }
 
 .sale__characteristics tbody {
@@ -49,11 +49,11 @@
 }
 
 .sale__characteristics tr {
-  padding-top: 2px;
-  padding-bottom: 6px;
-  margin-bottom: 7px;
   display: block;
   width: 100%;
+  margin-bottom: 7px;
+  padding-top: 2px;
+  padding-bottom: 6px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -76,15 +76,15 @@
 .sale__price {
   margin: 0;
   margin-bottom: 28px;
-  @include bold;
   font-size: 17px;
+  @include bold;
   color: $main-color;
   text-align: center;
 }
 
 .sale__button {
-  @include bold;
   line-height: 20px;
+  @include bold;
   color: $main-color;
 }
 
@@ -94,36 +94,36 @@
 
 @media (min-width: $tablet-width) {
   .sale {
-    padding: 0px 50px;
     margin-bottom: 52px;
+    padding: 0px 50px;
     padding-bottom: 66px;
   }
 
   .sale__header {
-    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
 
   .sale__title {
+    margin-bottom: 0;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 0;
   }
 
   .sale__title-description {
-    width: 115px;
-    text-align: center;
-    line-height: 17px;
     align-self: center;
+    width: 115px;
     padding-right: 6px;
     padding-top: 6px;
+    line-height: 17px;
+    text-align: center;
   }
 
   .sale__offer {
     position: relative;
     display: flex;
-    justify-content: sale__offer;
+    justify-content: space-between;
   }
 
   .sale__text {
@@ -131,18 +131,18 @@
   }
 
   .sale__description {
+    margin-bottom: 42px;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 42px;
   }
 
   .sale__image--mobile {
     position: absolute;
     top: 0;
     right: 0;
-    padding-top: 8px;
     width: 333px;
     height: 404px;
+    padding-top: 8px;
   }
 
   .sale__characteristics {
@@ -150,18 +150,18 @@
   }
 
   .sale__price {
+    margin-bottom: 34px;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .sale {
     position: relative;
+    margin-bottom: 60px;
     padding: 0px 50px;
     padding-bottom: 96px;
-    margin-bottom: 60px;
   }
 
   .sale__header {
@@ -169,8 +169,8 @@
   }
 
   .sale__title {
-    padding-left: 22px;
     order: 2;
+    padding-left: 22px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -182,8 +182,8 @@
   .sale__offer {
     position: static;
     justify-content: flex-start;
-    margin-left: 176px;
     width: 292px;
+    margin-left: 176px;
   }
 
   .sale__text {
@@ -203,12 +203,11 @@
   }
 
   .sale__image {
-    width: 525px;
-    height: 636px;
     position: absolute;
     top: -60px;
     right: 50px;
     z-index: -1;
+    width: 525px;
+    height: 636px;
   }
-
 }

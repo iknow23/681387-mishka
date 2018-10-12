@@ -2,9 +2,9 @@
   position: relative;
   width: 260px;
   margin: 0 auto;
-  border: 1px solid #ececec;
-  padding-bottom: 32px;
   margin-bottom: 58px;
+  padding-bottom: 32px;
+  border: 1px solid #ececec;
 }
 
 .making__image {
@@ -17,7 +17,6 @@
   top: 130px;
   left: 75px;
   cursor: pointer;
-
   transition: all 0.5s ease-in;
 }
 
@@ -32,40 +31,37 @@
 
 .making__title {
   position: relative;
-  color: #000000;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-  padding-left: 90px;
   margin: 0;
   margin-top: 22px;
   margin-bottom: 202px;
+  padding-left: 90px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
 
   &::before {
     content: "";
-
     position: absolute;
     top: 7px;
     left: 33px;
-
     width: 32px;
     height: 30px;
-
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
   }
 }
 
 .making__description {
-  font-size: 13px;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .making__button {
-  line-height: 16px;
   padding: 16px 0px;
+  line-height: 16px;
 }
 
 .making__description {
@@ -79,11 +75,11 @@
 
 @media (min-width: $tablet-width) {
   .making {
-    width: 668px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 45px;
+    width: 668px;
     margin-bottom: 62px;
+    padding-bottom: 45px;
 
     &::before {
       top: 50%;
@@ -106,12 +102,12 @@
   }
 
   .making__title {
-    font-size: 20px;
-    line-height: 24px;
     order: 1;
-    padding-left: 105px;
     margin: 0;
     margin-bottom: 34px;
+    padding-left: 105px;
+    font-size: 20px;
+    line-height: 24px;
 
     &::before {
       top: -4px;
@@ -120,11 +116,11 @@
   }
 
   .making__description {
+    order: 2;
+    margin-bottom: 35px;
+    padding: 0px 40px;
     font-size: 15px;
     line-height: 30px;
-    order: 2;
-    padding: 0px 40px;
-    margin-bottom: 35px;
   }
 
   .making__button {
@@ -135,11 +131,11 @@
 
 @media (min-width: $desktop-width) {
   .making {
-    width: 1050px;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0;
+    width: 1050px;
     margin-bottom: 102px;
+    padding-bottom: 0;
 
     &::before {
       top: 190px;
@@ -174,8 +170,8 @@
   }
 
   .making__description {
-    padding: 0;
     margin-bottom: 48px;
+    padding: 0;
   }
 
   .making__button {

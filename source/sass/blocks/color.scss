@@ -11,19 +11,19 @@
 }
 
 .color__title {
-  color: #63d1bb;
+  margin-bottom: 37px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
-  margin-bottom: 37px;
+  color: #63d1bb;
 }
 
 .color label {
+  position: relative;
   display: block;
   padding-left: 62px;
   padding-right: 20px;
   cursor: pointer;
-  position: relative;
 }
 
 .color__input-checkbox + label::before {
@@ -31,23 +31,18 @@
   position: absolute;
   top: -10px;
   left: 0;
-
   width: 35px;
   height: 35px;
-
   border: 2px solid $main-color;
 }
 
 .color__input-checkbox:checked + label::after {
   content: "";
-
   position: absolute;
   top: 2px;
   left: 8px;
-
   width: 22px;
   height: 16px;
-
   background-image: url("../img/tick.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -71,11 +66,11 @@
 
 @media (min-width: $tablet-width) {
   .color {
+    margin-bottom: 0;
     padding-top: 66px;
-    background-color: #f1f1f1;
     padding-right: 18px;
     padding-bottom: 12px;
-    margin-bottom: 0;
+    background-color: #f1f1f1;
   }
 
   .color__title {

@@ -3,11 +3,11 @@
 }
 
 .comment__title {
-  color: #63d1bb;
+  margin-bottom: 24px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
-  margin-bottom: 24px;
+  color: #63d1bb;
 }
 
 .comment__group {
@@ -15,14 +15,14 @@
 }
 
 .comment textarea {
-  box-sizing: border-box;
-  padding: 15px;
   display: block;
   width: 100%;
   min-height: 142px;
+  padding: 15px;
   outline: none;
   border: 2px solid $main-color;
   cursor: pointer;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -32,27 +32,27 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    padding-top: 50px;
-    margin-bottom: 53px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 53px;
+    padding-top: 50px;
   }
 
   .comment textarea {
     width: 500px;
-    font-size: 19px;
     min-height: 142px;
-    box-sizing: border-box;
     padding-top: 14px;
     padding-left: 12px;
+    font-size: 19px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
+    margin-bottom: 47px;
     padding-left: 62px;
     padding-right: 175px;
-    margin-bottom: 47px;
   }
 
   .comment__title {

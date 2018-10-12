@@ -3,22 +3,22 @@
 }
 
 .mail__title {
-  color: #63d1bb;
+  margin-bottom: 22px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
-  margin-bottom: 22px;
+  color: #63d1bb;
 }
 
 .mail input {
-  font-size: 17px;
-  display: block;
   position: relative;
+  display: block;
   width: 100%;
   padding: 0;
+  padding-bottom: 16px;
+  font-size: 17px;
   border: none;
   border-bottom: 2px solid #000000;
-  padding-bottom: 16px;
   cursor: pointer;
 
   &:hover {
@@ -34,16 +34,16 @@
 
 @media (min-width: $tablet-width) {
   .mail {
+    margin-bottom: 0;
     padding-top: 27px;
     padding-bottom: 50px;
-    margin-bottom: 0;
     background-color: #f1f1f1;
   }
 
   .mail__title {
     margin: 0;
-    padding-top: 14px;
     margin-right: 122px;
+    padding-top: 14px;
   }
 
   .mail__filter-group {
@@ -56,12 +56,12 @@
   }
 
   .mail input {
-    background-color: transparent;
     padding-bottom: 15px;
     padding-top: 10px;
     padding-left: 18px;
-    font-size: 19px;
     padding-right: 60px;
+    font-size: 19px;
+    background-color: transparent;
     box-sizing: border-box;
   }
 

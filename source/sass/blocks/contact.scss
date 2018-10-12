@@ -3,11 +3,11 @@
 }
 
 .contact__title {
-  color: #63d1bb;
+  margin-bottom: 30px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
-  margin-bottom: 30px;
+  color: #63d1bb;
 }
 
 .contact__group {
@@ -24,9 +24,9 @@
   display: block;
   width: 100%;
   padding: 0;
+  padding-bottom: 18px;
   border: none;
   border-bottom: 2px solid #000000;
-  padding-bottom: 18px;
   cursor: pointer;
 
   &:hover {
@@ -36,8 +36,8 @@
 
 @media (min-width: $tablet-width) {
   .contact {
-    padding-top: 66px;
     margin-bottom: 0;
+    padding-top: 66px;
     padding-bottom: 10px;
   }
 

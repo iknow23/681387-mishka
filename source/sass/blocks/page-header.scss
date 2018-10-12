@@ -5,13 +5,13 @@
 }
 
 .page-header__logo {
-  cursor: pointer;
-  text-align: center;
-  height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80px;
+  text-align: center;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -29,10 +29,10 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-height: 90px;
     position: relative;
     display: flex;
     justify-content: center;
+    min-height: 90px;
   }
 
   .page-header__logo {
@@ -42,10 +42,10 @@
   }
 
   .page-header__comment {
-    display: block;
     position: absolute;
     right: 50px;
     bottom: -40px;
+    display: block;
     font-size: 15px;
     line-height: 24px;
     color: $main-color;

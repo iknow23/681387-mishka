@@ -7,18 +7,16 @@
 }
 
 .filter__form .fieldset {
+  position: relative;
   margin-left: 0;
   margin-right: 0;
   border: none;
-  position: relative;
 
   &::before {
     content: "";
-
     position: absolute;
     top: 8px;
     left: 60px;
-
     width: 200px;
     height: 1px;
     background-color: #63d1bb;
@@ -36,11 +34,11 @@
 
 .filter__description {
   margin: 0;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
   color: $main-color;
   @include normal;
-  margin-bottom: 32px;
 }
 
 .filter__button {
@@ -81,8 +79,8 @@
   }
 
   .filter__description {
-    margin: 0;
     order: 1;
+    margin: 0;
     font-size: 17px;
     line-height: 30px;
   }
