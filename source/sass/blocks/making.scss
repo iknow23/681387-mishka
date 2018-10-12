@@ -5,12 +5,27 @@
   border: 1px solid #ececec;
   padding-bottom: 32px;
   margin-bottom: 58px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: 2;
+    top: 132px;
+    left: 50%;
+    margin-left: -50px;
+
+    width: 101px;
+    height: 77px;
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .making__image {
   position: absolute;
   top: 95px;
-}
+  }
 
 .making__title {
   position: relative;
@@ -61,12 +76,18 @@
 
 @media (min-width: $tablet-width) {
   .making {
-    position: static;
     width: 668px;
     display: flex;
     flex-direction: column;
     padding-bottom: 45px;
     margin-bottom: 62px;
+
+    &::before {
+      top: 50%;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: -182px;
+    }
   }
 
   .making__image {
@@ -110,6 +131,13 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 0;
+    margin-bottom: 102px;
+
+    &::before {
+      top: 190px;
+      left: 291px;
+      margin: 0;
+    }
   }
 
   .making-container {

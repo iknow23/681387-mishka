@@ -15,9 +15,11 @@
 }
 
 .comment textarea {
+  box-sizing: border-box;
+  padding: 15px;
   display: block;
   width: 100%;
-  min-height: 135px;
+  min-height: 142px;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,5 +53,7 @@
 
   .comment textarea {
     width: 700px;
+    padding-top: 12px;
+    padding-left: 15px;
   }
 }

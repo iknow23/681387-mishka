@@ -81,6 +81,20 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 50px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -15px;
+      right: 52px;
+
+      width:47px;
+      height: 81px;
+
+      background-image: url(../img/icon-flag.svg);
+      background-repeat: no-repeat;
+    }
   }
 
   .contacts__information {
@@ -182,6 +196,6 @@
 
   .contacts__map-image {
     width: 525px;
-    height: 427px;
+    height: 457px;
   }
 }

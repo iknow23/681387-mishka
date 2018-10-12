@@ -30,7 +30,7 @@
   content: "";
   position: absolute;
   top: -10px;
-  left: -2px;
+  left: 0;
 
   width: 35px;
   height: 35px;
@@ -122,5 +122,9 @@
   .color__title {
     margin-right: 88px;
     margin-left: 0;
+  }
+
+  .color__group {
+    width: 208px;
   }
 }
