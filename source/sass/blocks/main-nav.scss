@@ -75,16 +75,14 @@
   position: absolute;
   top:30px;
   left: 40px;
-
-  opacity: 0.2;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .main-nav__item-basket {
   position: absolute;
   top:30px;
   left: 40px;
-
-  opacity: 0.2;
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .main-nav__item-link {
@@ -94,13 +92,13 @@
   color: #000000;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    opacity: 0.6;
+  &:hover svg path,
+  &:focus svg path {
+    fill: rgba(98, 209, 186, 1);
   }
 
-  &:active {
-    opacity: 0.3;
+  &:active svg path {
+    fill: rgba(98, 209, 186, 0.3);
   }
 }
 

@@ -5,12 +5,22 @@
 }
 
 .page-header__logo {
+  cursor: pointer;
   text-align: center;
   height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__comment {
