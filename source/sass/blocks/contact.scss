@@ -28,3 +28,40 @@
   border-bottom: 2px solid #000000;
   padding-bottom: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .contact {
+    padding-top: 66px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+
+  .contact__title {
+    margin: 0;
+    margin-right: 125px;
+  }
+
+  .contact__filter-group {
+    width: 100%;
+  }
+
+  .contact__group {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .contact__group label {
+    margin-bottom: 0;
+    margin-right: 26px;
+  }
+
+  .contact input {
+    padding-bottom: 12px;
+    padding-left: 18px;
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

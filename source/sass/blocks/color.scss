@@ -71,7 +71,45 @@
 
 @media (min-width: $tablet-width) {
   .color {
-    padding-top: 50px;
+    padding-top: 66px;
+    background-color: #f1f1f1;
+    padding-right: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
+
+  .color__title {
+    margin: 0;
+    margin-right: 140px;
+  }
+
+  .color__group:not(:last-child) {
+    margin-bottom: 58px;
+  }
+
+  .color__filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .color__input-checkbox + label::before {
+    top: -16px;
+    left: -17px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .color__input-checkbox:checked + label::after {
+    top: 0px;
+    left: -6px;
+    width: 33px;
+    height: 22px;
+    background-image: url(../img/tick-tablet.png);
+}
+
+  .color__group {
+    width: 205px;
   }
 }
 

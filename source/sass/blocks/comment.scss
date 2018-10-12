@@ -19,3 +19,26 @@
   width: 100%;
   min-height: 135px;
 }
+
+@media (min-width: $tablet-width) {
+  .comment {
+    padding-top: 50px;
+    margin-bottom: 53px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .comment textarea {
+    width: 500px;
+    font-size: 19px;
+    min-height: 142px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-left: 12px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+}

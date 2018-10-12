@@ -17,3 +17,53 @@
   border-bottom: 2px solid #000000;
   padding-bottom: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .tel {
+    padding-top: 55px;
+    margin-bottom: 0;
+    background-color: #f1f1f1;
+  }
+
+  .tel__title {
+    margin: 0;
+    padding-top: 13px;
+    margin-right: 135px;
+  }
+
+  .tel__filter-group {
+    width: 100%;
+  }
+
+  .tel__group {
+    position: relative;
+    margin: 0;
+  }
+
+  .tel input {
+    background-color: transparent;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 18px;
+    font-size: 19px;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+
+  .tel__icon {
+    position: absolute;
+    right: 26px;
+    top: 8px;
+    fill: rgba(0, 0, 0, 0.2);
+  }
+
+  input:hover ~ .tel__icon path,
+  input:focus ~ .tel__icon path {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
