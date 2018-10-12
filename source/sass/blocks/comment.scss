@@ -20,6 +20,14 @@
   display: block;
   width: 100%;
   min-height: 142px;
+  outline: none;
+  border: 2px solid $main-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #63d1bb;
+  }
 }
 
 @media (min-width: $tablet-width) {
