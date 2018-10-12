@@ -5,27 +5,30 @@
   border: 1px solid #ececec;
   padding-bottom: 32px;
   margin-bottom: 58px;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    z-index: 2;
-    top: 132px;
-    left: 50%;
-    margin-left: -50px;
-
-    width: 101px;
-    height: 77px;
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 .making__image {
   position: absolute;
   top: 95px;
-  }
+}
+
+.making__button-icon {
+  position: absolute;
+  top: 130px;
+  left: 75px;
+  cursor: pointer;
+
+  transition: all 0.5s ease-in;
+}
+
+.making__button-icon:hover {
+  transform: scale(1.2);
+}
+
+.making__button-icon:active {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
 
 .making__title {
   position: relative;
@@ -90,6 +93,11 @@
     }
   }
 
+  .making__button-icon {
+    top: 188px;
+    left: 284px;
+  }
+
   .making__image {
     position: static;
     width: 668px;
@@ -138,6 +146,11 @@
       left: 291px;
       margin: 0;
     }
+  }
+
+  .making__button-icon {
+    top: 189px;
+    left: 291px;
   }
 
   .making-container {

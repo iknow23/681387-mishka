@@ -71,6 +71,15 @@
   border-bottom: 1px solid #d3d2d2;
 }
 
+.main-nav__item-link:hover,
+.main-nav__item-link:focus {
+  opacity: 0.6;
+}
+
+.main-nav__item-link:active {
+  opacity: 0.3;
+}
+
 .main-nav__item-search {
   position: absolute;
   top:30px;

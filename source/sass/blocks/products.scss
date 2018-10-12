@@ -66,9 +66,13 @@
   right: -124px;
   width: 40px;
   height: 62px;
-  opacity: 0.2;
+  opacity: 0.5;
   background-image: url("../img/icon-interior.svg");
   background-repeat: no-repeat;
+}
+
+.products__types-interior:hover::before {
+  opacity: 0.7;
 }
 
 .products__types-child::before {
@@ -78,9 +82,20 @@
   right: -133px;
   width: 60px;
   height: 60px;
-  opacity: 0.2;
+  opacity: 0.5;
   background-image: url("../img/icon-toy.svg");
   background-repeat: no-repeat;
+}
+
+.products__types-child:hover::before {
+  opacity: 0.7;
+}
+
+.products__link:active .products__types-interior,
+.products__link:active .products__types-child,
+.products__link:active .products__types-interior::before,
+.products__link:active .products__types-child::before {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
