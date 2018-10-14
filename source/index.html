@@ -89,25 +89,32 @@
               <img class="sale__image sale__image--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение товара недели - вязаные корзинки">
               <p class="sale__price">Цена: 990 руб.</p>
               <a class="sale__button btn" href="#">Заказать</a>
-              <div class="sale__modal modal">
-              	<h3 class="modal__title">Добавить в корзину</h3>
-              	<p class="modal__description">Выберите размер:</p>
-              	<form class="modal__list" action="#" method="get">
-              		<p class="modal__item">
-              			<label class="visually-hidden" for="s-size">Размер S</label>
-              			<input class="modal__input" type="radio" name="product-size" id="s-size" checked>
-              		</p>
-              		<p class="modal__item">
-              			<label class="visually-hidden" for="m-size">Размер M</label>
-              			<input class="modal__input" type="radio" name="product-size" id="m-size">
-              		</p>
-              		<p class="modal__item">
-              			<label class="visually-hidden" for="l-size">Размер L</label>
-              			<input class="modal__input" type="radio" name="product-size" id="l-size">
-              		</p>
-              		<input class="modal__button btn" type="submit" value="Добавить">
-              	</form>
+
+              <div class="overlay">
+                <div class="sale__modal modal">
+                	<h3 class="modal__title">Добавить в корзину</h3>
+                	<p class="modal__description">Выберите размер:</p>
+                	<form action="#" method="get">
+                    <div class="modal__list">
+                  		<p class="modal__item">
+                  			<input class="visually-hidden modal__input" type="radio" name="product-size" id="s-size" checked>
+                        <label class="modal__item-label" for="s-size">S</label>
+                  		</p>
+                  		<p class="modal__item">
+                  			<input class="visually-hidden modal__input" type="radio" name="product-size" id="m-size">
+                        <label class="modal__item-label" for="m-size">M</label>
+                  		</p>
+                  		<p class="modal__item">
+                  			<input class="visually-hidden modal__input" type="radio" name="product-size" id="l-size">
+                        <label class="modal__item-label" for="l-size">L</label>
+                  		</p>
+                    </div>
+                		<input class="modal__button" type="submit" value="Добавить">
+                	</form>
+                </div>
               </div>
+
+
             </div>
           </div>
         </section>
@@ -268,17 +275,17 @@
       });
 
       var modalToggle = document.querySelector(".sale__button");
-      var modal = document.querySelector(".modal");
+      var modal = document.querySelector(".overlay");
 
       modalToggle.addEventListener("click", function(evt) {
         evt.preventDefault();
-        modal.classList.add("modal--show");
+        modal.classList.add("overlay--show");
       });
 
       window.addEventlistener("keydown", function (evt) {
         if (evt.keyCode === 27) {
-          if(modal.classList.contains("modal--show")) {
-            modal.classList.remove("modal--show");
+          if(modal.classList.contains("overlay--show")) {
+            modal.classList.remove("overlay--show");
             evt.preventDefault();
           }
         }
