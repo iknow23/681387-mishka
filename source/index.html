@@ -282,7 +282,7 @@
         modal.classList.add("overlay--show");
       });
 
-      window.addEventlistener("keydown", function (evt) {
+      window.addEventListener("keydown", function (evt) {
         if (evt.keyCode === 27) {
           if(modal.classList.contains("overlay--show")) {
             modal.classList.remove("overlay--show");
