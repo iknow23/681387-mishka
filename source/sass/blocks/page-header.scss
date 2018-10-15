@@ -23,10 +23,6 @@
   }
 }
 
-.page-header__comment {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     position: relative;
@@ -39,16 +35,6 @@
     position: absolute;
     z-index: 3;
     left: 50px;
-  }
-
-  .page-header__comment {
-    position: absolute;
-    right: 50px;
-    bottom: -40px;
-    display: block;
-    font-size: 15px;
-    line-height: 24px;
-    color: $main-color;
   }
 }
 
