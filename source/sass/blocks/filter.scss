@@ -1,6 +1,5 @@
 .filter {
-  padding: 0px 30px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   font-size: 17px;
   line-height: 18px;
   @include bold;
@@ -8,8 +7,6 @@
 
 .filter__form .fieldset {
   position: relative;
-  margin-left: 0;
-  margin-right: 0;
   border: none;
 
   &::before {

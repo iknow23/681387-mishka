@@ -35,19 +35,23 @@
 @media (min-width: $tablet-width) {
   .mail {
     margin-bottom: 0;
+    margin-left: -50px;
+    margin-right: -50px;
     padding-top: 27px;
     padding-bottom: 50px;
     background-color: #f1f1f1;
   }
 
   .mail__title {
+    width: 167px;
     margin: 0;
-    margin-right: 122px;
+    margin-left: 50px;
     padding-top: 14px;
   }
 
   .mail__filter-group {
-    width: 100%;
+    flex-grow: 1;
+    margin-right: 50px;
   }
 
   .mail__group {
@@ -86,7 +90,8 @@
   }
 
   .mail__title {
-    margin-right: 61px;
+    width: 113px;
+    margin-right: 0;
   }
 
   .mail__icon {

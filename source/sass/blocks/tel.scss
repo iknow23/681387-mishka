@@ -35,18 +35,22 @@
 @media (min-width: $tablet-width) {
   .tel {
     margin-bottom: 0;
+    margin-left: -50px;
+    margin-right: -50px;
     padding-top: 55px;
     background-color: #f1f1f1;
   }
 
   .tel__title {
+    width: 167px;
     margin: 0;
-    margin-right: 135px;
+    margin-left: 50px;
     padding-top: 13px;
   }
 
   .tel__filter-group {
-    width: 100%;
+    flex-grow: 1;
+    margin-right: 50px;
   }
 
   .tel__group {
@@ -85,7 +89,8 @@
   }
 
   .tel__title {
-    margin-right: 81px;
+    width: 113px;
+    margin-right: 0;
   }
 
   .tel__icon {
