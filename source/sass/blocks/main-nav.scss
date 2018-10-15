@@ -251,14 +251,14 @@
   .main-nav__item-search {
     position: absolute;
     top: -32px;
-    left: -140px;
+    left: -167px;
     border: 1px solid #ececec;
     padding: 36px 47px 52px 33px;
   }
 
   .main-nav__item-basket {
-    top: 0;
-    left: -40px;
+    top: 2px;
+    left: -53px;
   }
 
   .main-nav__site-navigation {
@@ -279,10 +279,30 @@
   }
 
   .main-nav__info-navigation {
-    position: absolute;
-    right: 0;
-    bottom: -90px;
     display: flex;
+    position: absolute;
+    right: 100px;
+    bottom: -40px;
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .main-nav__info-navigation .main-nav__item {
+    padding: 0;
+  }
+
+  .main-nav__info-navigation .main-nav__item-link {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .main-nav__info-navigation .main-nav__item:first-of-type {
+    margin-right: 62px;
+  }
+
+  .main-nav__user-navigation .main-nav__item,
+  .main-nav__info-navigation .main-nav__item {
+    border-right: none;
   }
 
   .main-nav__item--hidden {
