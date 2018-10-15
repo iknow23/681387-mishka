@@ -1,6 +1,5 @@
 .sale {
   margin-bottom: 28px;
-  padding: 0px 30px;
   padding-bottom: 40px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
@@ -95,7 +94,6 @@
 @media (min-width: $tablet-width) {
   .sale {
     margin-bottom: 52px;
-    padding: 0px 50px;
     padding-bottom: 66px;
   }
 
@@ -160,7 +158,6 @@
   .sale {
     position: relative;
     margin-bottom: 60px;
-    padding: 0px 50px;
     padding-bottom: 96px;
   }
 
@@ -170,13 +167,16 @@
 
   .sale__title {
     order: 2;
-    padding-left: 22px;
+    margin-top: -2px;
+    padding-left: 30px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .sale__title-description {
-    padding-left: 26px;
+    width: 140px;
+    padding-left: 40px;
+    padding-right: 15px;
   }
 
   .sale__offer {
@@ -198,6 +198,11 @@
     margin-bottom: 102px;
   }
 
+  .sale__characteristics tr {
+    margin-bottom: 6px;
+    padding-bottom: 7px;
+  }
+
   .sale__price {
     padding-right: 2px;
   }
@@ -205,7 +210,7 @@
   .sale__image {
     position: absolute;
     top: -60px;
-    right: 50px;
+    right: 100px;
     z-index: -1;
     width: 525px;
     height: 636px;
