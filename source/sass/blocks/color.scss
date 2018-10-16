@@ -1,6 +1,129 @@
+.color {
+  margin-bottom: 43px;
+}
+
+.color__group {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 43px;
+  }
+}
+
 .color__title {
-  color: #63d1bb;
+  margin-bottom: 37px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  color: #63d1bb;
+}
+
+.color label {
+  position: relative;
+  display: block;
+  padding-left: 62px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.color__input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid $main-color;
+}
+
+.color__input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/tick.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*фон для отключенного НЕ отмеченного чекбокса*/
+.color__input-checkbox:disabled + label::before,
+.color__input-checkbox:disabled + label::after {
+	opacity: 0.4;
+}
+
+.color__input-checkbox + label:hover::before,
+.color__input-checkbox + label:focus::before {
+	border: 2px solid #62d1ba;
+}
+
+.color__input-checkbox + label:active::before {
+  border: 2px solid $main-color;
+	opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .color {
+    margin-bottom: 0;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-top: 66px;
+    padding-right: 18px;
+    padding-bottom: 12px;
+    background-color: #f1f1f1;
+  }
+
+  .color__title {
+    margin: 0;
+    margin-right: 140px;
+    margin-left: 50px;
+  }
+
+  .color__group:not(:last-child) {
+    margin-bottom: 58px;
+  }
+
+  .color__filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 49px;
+  }
+
+  .color__input-checkbox + label::before {
+    top: -15px;
+    left: -16px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .color__input-checkbox:checked + label::after {
+    top: 0px;
+    left: -6px;
+    width: 33px;
+    height: 22px;
+    background-image: url(../img/tick-tablet.png);
+}
+
+  .color__group {
+    width: 205px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color {
+    padding-right: 124px;
+    padding-left: 60px;
+  }
+
+  .color__title {
+    margin-right: 88px;
+    margin-left: 50px;
+  }
+
+  .color__group {
+    width: 208px;
+  }
 }

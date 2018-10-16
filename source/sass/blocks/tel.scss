@@ -1,11 +1,100 @@
+.tel {
+  margin-bottom: 32px;
+}
+
 .tel__title {
-  color: #63d1bb;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  color: #63d1bb;
 }
 
 .tel input {
+  position: relative;
   display: block;
   width: 100%;
+  padding: 0;
+  padding-top: 3px;
+  padding-bottom: 14px;
+  font-size: 19px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.tel__icon {
+  position: absolute;
+  top: 32px;
+  right: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .tel {
+    margin-bottom: 0;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-top: 55px;
+    background-color: #f1f1f1;
+  }
+
+  .tel__title {
+    width: 167px;
+    margin: 0;
+    margin-left: 50px;
+    padding-top: 13px;
+  }
+
+  .tel__filter-group {
+    flex-grow: 1;
+    margin-right: 50px;
+  }
+
+  .tel__group {
+    position: relative;
+    margin: 0;
+  }
+
+  .tel input {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 60px;
+    font-size: 19px;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+
+  .tel__icon {
+    position: absolute;
+    top: 8px;
+    right: 26px;
+    fill: rgba(0, 0, 0, 0.2);
+  }
+
+  input:hover ~ .tel__icon path,
+  input:focus ~ .tel__icon path {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tel {
+    padding-left: 62px;
+    padding-right: 175px;
+  }
+
+  .tel__title {
+    width: 113px;
+    margin-right: 0;
+  }
+
+  .tel__icon {
+    right: 8px;
+    top: 7px;
+  }
 }

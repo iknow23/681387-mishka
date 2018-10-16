@@ -1,11 +1,101 @@
+.mail {
+  margin-bottom: 32px;
+}
+
 .mail__title {
-  color: #63d1bb;
+  margin-bottom: 22px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  color: #63d1bb;
 }
 
 .mail input {
+  position: relative;
   display: block;
   width: 100%;
+  padding: 0;
+  padding-bottom: 16px;
+  font-size: 17px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.mail__icon {
+  position: absolute;
+  right: 4px;
+  top: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .mail {
+    margin-bottom: 0;
+    margin-left: -50px;
+    margin-right: -50px;
+    padding-top: 27px;
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
+  }
+
+  .mail__title {
+    width: 167px;
+    margin: 0;
+    margin-left: 50px;
+    padding-top: 14px;
+  }
+
+  .mail__filter-group {
+    flex-grow: 1;
+    margin-right: 50px;
+  }
+
+  .mail__group {
+    position: relative;
+    margin: 0;
+  }
+
+  .mail input {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-right: 60px;
+    font-size: 19px;
+    background-color: transparent;
+    box-sizing: border-box;
+  }
+
+  .mail__icon {
+    position: absolute;
+    right: 22px;
+    top: 8px;
+    fill: rgba(0, 0, 0, 0.2);
+  }
+
+  input:hover ~ .mail__icon path,
+  input:focus ~ .mail__icon path {
+    fill: #62d1ba;
+    opacity: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mail {
+    padding-left: 62px;
+    padding-right: 175px;
+  }
+
+  .mail__title {
+    width: 113px;
+    margin-right: 0;
+  }
+
+  .mail__icon {
+    right: 4px;
+    top: 7px;
+  }
 }

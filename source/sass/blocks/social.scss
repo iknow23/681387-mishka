@@ -1,20 +1,27 @@
 .social__list {
-  @include indents-zero;
-  width: 155px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  width: 142px;
+  @include indents-zero;
+  margin: 0 auto;
 }
 
-.copyright {
-  display: flex;
-  justify-content: center;
+.social__link {
+  fill: #231f20;
+
+  &:hover,
+  &:focus {
+    fill: rgba(70, 193, 174, 1);
+  }
+
+  &:active {
+    fill: rgba(70, 193, 174, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
+  .social__list {
+    align-items: center;
+    margin-top: -12px;
+  }
 }

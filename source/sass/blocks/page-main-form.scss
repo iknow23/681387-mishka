@@ -1,18 +1,19 @@
 .page-main-form__title {
-  @include bold;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 70px 0px 76px 0px;
   font-size: 27px;
   line-height: 30px;
+  @include bold;
   color: #231f20;
-  background-color: #f1f1f1;
-  padding: 75px 0px;
   text-align: center;
-  margin: 0;
-  margin-bottom: 30px;
+  background-color: #f1f1f1;
 }
 
 .page-main-form__description {
   width: 260px;
   margin: 0 auto;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
@@ -20,9 +21,10 @@
 
 @media (min-width: $tablet-width) {
   .page-main-form__title {
+    margin-bottom: 54px;
+    padding: 92px 0px 100px 0px;
     font-size: 43px;
     line-height: 50px;
-    padding: 87px 0px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-position: bottom;
@@ -30,14 +32,18 @@
 
   .page-main-form__description {
     width: 668px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main-form__title {
+    margin-bottom: 104px;
+    padding-bottom: 120px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 125px;
   }
 
   .page-main-form__description {

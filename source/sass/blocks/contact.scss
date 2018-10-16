@@ -1,11 +1,79 @@
+.contact {
+  margin-bottom: 32px;
+}
+
 .contact__title {
-  color: #63d1bb;
+  margin-bottom: 30px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  color: #63d1bb;
+}
+
+.contact__group {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contact__group label {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .contact input {
   display: block;
   width: 100%;
+  padding: 0;
+  padding-bottom: 18px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contact {
+    margin-bottom: 0;
+    padding-top: 66px;
+    padding-bottom: 10px;
+  }
+
+  .contact__title {
+    margin: 0;
+    margin-right: 125px;
+  }
+
+  .contact__filter-group {
+    width: 100%;
+  }
+
+  .contact__group {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .contact__group label {
+    margin-bottom: 0;
+    margin-right: 26px;
+  }
+
+  .contact input {
+    padding-bottom: 12px;
+    padding-left: 16px;
+    font-size: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    padding-left: 60px;
+    padding-right: 174px;
+  }
+
+  .contact__title {
+    margin-right: 74px;
+  }
 }

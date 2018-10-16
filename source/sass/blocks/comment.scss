@@ -1,12 +1,67 @@
+.comment {
+  margin-bottom: 16px;
+}
+
 .comment__title {
-  color: #63d1bb;
+  margin-bottom: 24px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
+  color: #63d1bb;
 }
 
+.comment__group {
+  margin: 0;
+}
 
 .comment textarea {
   display: block;
   width: 100%;
+  min-height: 142px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid $main-color;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #63d1bb;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+    padding-top: 50px;
+  }
+
+  .comment textarea {
+    width: 500px;
+    min-height: 142px;
+    padding-top: 14px;
+    padding-left: 12px;
+    font-size: 19px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-bottom: 47px;
+    padding-left: 62px;
+    padding-right: 175px;
+  }
+
+  .comment__title {
+    margin-right: 61px;
+  }
+
+  .comment textarea {
+    width: 700px;
+    padding-top: 12px;
+    padding-left: 15px;
+  }
 }

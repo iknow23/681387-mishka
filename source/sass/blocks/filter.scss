@@ -1,17 +1,37 @@
 .filter {
-  padding: 0px 30px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   font-size: 17px;
   line-height: 18px;
   @include bold;
 }
 
-.filter__form fieldset {
-  padding: 0;
+.filter__form .fieldset {
+  position: relative;
   border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    width: 200px;
+    height: 1px;
+    background-color: #63d1bb;
+  }
+}
+
+.filter h3 {
+  text-transform: uppercase;
+}
+
+.filter label {
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .filter__description {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
   color: $main-color;
@@ -30,9 +50,13 @@
     padding-bottom: 50px;
   }
 
-  .filter__form fieldset {
+  .filter__form .fieldset {
     display: flex;
     flex-direction: row;
+
+    &::before {
+      display: none;
+    }
   }
 
   .filter label {
@@ -41,15 +65,19 @@
 
   .filter__button {
     width: 230px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .filter__footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .filter__description {
     order: 1;
+    margin: 0;
     font-size: 17px;
     line-height: 30px;
   }
