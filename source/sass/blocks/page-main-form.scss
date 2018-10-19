@@ -1,9 +1,10 @@
 .page-main-form__title {
   margin: 0;
   margin-bottom: 22px;
-  padding: 70px 0px 76px 0px;
+  padding: 70px 0 76px 0;
   font-size: 27px;
   line-height: 30px;
+
   @include bold;
   color: #231f20;
   text-align: center;
@@ -22,7 +23,7 @@
 @media (min-width: $tablet-width) {
   .page-main-form__title {
     margin-bottom: 54px;
-    padding: 92px 0px 100px 0px;
+    padding: 92px 0 100px 0;
     font-size: 43px;
     line-height: 50px;
     background-image: url("../img/bg-zigzag-fill.svg");

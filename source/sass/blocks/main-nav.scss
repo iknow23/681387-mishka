@@ -76,14 +76,14 @@
 
 .main-nav__item-search {
   position: absolute;
-  top:30px;
+  top: 30px;
   left: 40px;
   fill: rgba(0, 0, 0, 0.2);
 }
 
 .main-nav__item-basket {
   position: absolute;
-  top:30px;
+  top: 30px;
   left: 40px;
   fill: rgba(0, 0, 0, 0.2);
 }
@@ -133,7 +133,7 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     position: static;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
 
   .main-nav__button {
@@ -182,6 +182,7 @@
     bottom: -40px;
     font-size: 15px;
     line-height: 24px;
+
     @include bold;
   }
 
@@ -213,6 +214,7 @@
     font-size: 15px;
     line-height: 24px;
     color: $main-color;
+
     @include normal;
     text-align: right;
   }
@@ -224,7 +226,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    padding: 0px 100px;
+    padding: 0 100px;
   }
 
   .main-nav__site-navigation .main-nav__item-link {
@@ -243,8 +245,8 @@
     padding: 0;
   }
 
-  .main-nav__item:nth-child(1)  {
-    padding: 30px 36px 30px 0px;
+  .main-nav__item:nth-child(1) {
+    padding: 30px 36px 30px 0;
     border-right: 1px solid #ececec;
   }
 
@@ -275,10 +277,6 @@
 
   .main-nav__user-navigation {
     padding-top: 31px;
-  }
-
-  .main-nav__user-navigation .main-nav__item {
-    padding: 0;
   }
 
   .main-nav__info-navigation {
