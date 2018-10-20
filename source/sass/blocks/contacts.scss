@@ -22,6 +22,7 @@
 .contacts__table-row {
   display: flex;
   justify-content: space-between;
+
   @include indents-zero;
   line-height: 30px;
 }
@@ -68,6 +69,7 @@
 .contacts__button {
   margin-bottom: 40px;
   font-size: 18px;
+
   @include bold;
   color: $main-color;
 }
@@ -87,9 +89,9 @@
       position: absolute;
       top: -15px;
       right: 52px;
-      width:47px;
+      width: 47px;
       height: 81px;
-      background-image: url(../img/icon-flag.svg);
+      background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
     }
   }

@@ -2,9 +2,11 @@
   0% {
     transform: scale(0);
   }
+
   70% {
     transform: scale(1.3);
   }
+
   100% {
     transform: scale(1);
   }
@@ -24,13 +26,13 @@
   background-color: #ffffff;
   animation-name: bounce;
   animation-duration: 0.6s;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .modal__title {
   margin: 0;
   margin-bottom: 20px;
-  padding: 0px 55px;
+  padding: 0 55px;
   font-size: 25px;
   line-height: 30px;
 }
@@ -64,6 +66,7 @@
   padding: 16px 35px;
   font-size: 17px;
   line-height: 16px;
+
   @include bold;
 }
 
@@ -128,7 +131,4 @@
     font-size: 17px;
     line-height: 30px;
   }
-}
-
-@media (min-width: $desktop-width) {
 }

@@ -19,9 +19,10 @@
 
 .products__title {
   margin-bottom: 124px;
-  padding: 0px 30px;
+  padding: 0 30px;
   font-size: 27px;
   line-height: 30px;
+
   @include bold;
   text-align: center;
 }
@@ -34,6 +35,7 @@
 .products__list {
   display: flex;
   flex-direction: column;
+
   @include indents-zero;
 }
 
@@ -43,13 +45,14 @@
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
+
   @include bold;
   text-decoration: none;
   transition: all 0.5s ease-in;
 
   &:hover,
   &:focus {
-    transform: scale(1,1.05) translateY(-5px);
+    transform: scale(1, 1.05) translateY(-5px);
   }
 }
 
@@ -130,7 +133,7 @@
   .products__list {
     flex-direction: row;
     min-height: 125px;
-    padding: 0px 50px;
+    padding: 0 50px;
   }
 
   .products__item {

@@ -14,6 +14,7 @@
 .sale__title {
   margin: 0;
   margin-bottom: 4px;
+
   @include bold;
   font-size: 25px;
   line-height: 30px;
@@ -23,6 +24,7 @@
 .sale__title-description {
   font-size: 17px;
   line-height: 20px;
+
   @include bold;
   color: #63d1bb;
   text-transform: uppercase;
@@ -76,6 +78,7 @@
   margin: 0;
   margin-bottom: 28px;
   font-size: 17px;
+
   @include bold;
   color: $main-color;
   text-align: center;
@@ -83,6 +86,7 @@
 
 .sale__button {
   line-height: 20px;
+
   @include bold;
   color: $main-color;
 }

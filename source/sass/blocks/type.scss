@@ -52,17 +52,17 @@
 /*фон для отключенной НЕ отмеченной радиокопки*/
 .type__input-radio:disabled + label::before,
 .type__input-radio:disabled + label::after {
-	opacity: 0.4;
+  opacity: 0.4;
 }
 
 .type__input-radio + label:hover::before,
 .type__input-radio + label:focus::before {
-	border: 2px solid #62d1ba;
+  border: 2px solid #62d1ba;
 }
 
 .type__input-radio + label:active::before {
   border: 2px solid $main-color;
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -88,7 +88,7 @@
 
   .type__input-radio:checked + label::after {
     top: 3px;
-    left: 0px;
+    left: 0;
   }
 
   .type__group:not(:last-child) {

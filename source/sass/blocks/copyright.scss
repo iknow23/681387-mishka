@@ -19,6 +19,7 @@
   padding: 6px 2px;
   font-size: 19px;
   line-height: 18px;
+
   @include bold;
 
   &:active {
@@ -29,6 +30,7 @@
 .copyright__text--catalog {
   font-size: 19px;
   line-height: 18px;
+
   @include bold;
   color: #000000;
 }

@@ -51,17 +51,17 @@
 /*фон для отключенного НЕ отмеченного чекбокса*/
 .color__input-checkbox:disabled + label::before,
 .color__input-checkbox:disabled + label::after {
-	opacity: 0.4;
+  opacity: 0.4;
 }
 
 .color__input-checkbox + label:hover::before,
 .color__input-checkbox + label:focus::before {
-	border: 2px solid #62d1ba;
+  border: 2px solid #62d1ba;
 }
 
 .color__input-checkbox + label:active::before {
   border: 2px solid $main-color;
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -100,12 +100,12 @@
   }
 
   .color__input-checkbox:checked + label::after {
-    top: 0px;
+    top: 0;
     left: -6px;
     width: 33px;
     height: 22px;
-    background-image: url(../img/tick-tablet.png);
-}
+    background-image: url("../img/tick-tablet.png");
+  }
 
   .color__group {
     width: 205px;

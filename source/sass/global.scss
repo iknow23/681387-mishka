@@ -10,11 +10,13 @@ html {
 
 body {
   font-size: 15px;
+
   @include normal;
 }
 
 .body-catalog {
   font-size: 13px;
+
   @include normal;
   color: $main-color;
 }
@@ -25,6 +27,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
