@@ -17,17 +17,17 @@
   &:focus {
     opacity: 0.6;
   }
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.page-header__logo img:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     position: relative;
     display: flex;
-    justify-content: center;
+    padding-top: 6px;
     min-height: 90px;
   }
 
@@ -39,7 +39,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    // justify-content: center;
+    padding-top: 0;
+  }
+
   .page-header__logo {
+    top: 6px;
     left: 50%;
     margin-left: -75px;
   }

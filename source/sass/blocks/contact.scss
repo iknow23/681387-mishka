@@ -109,4 +109,9 @@
   .contact__title {
     margin-right: 74px;
   }
+
+  .contact__group:first-of-type input {
+    margin-top: -2px;
+    padding-bottom: 14px;
+  }
 }

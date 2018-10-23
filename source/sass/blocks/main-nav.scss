@@ -74,6 +74,10 @@
   opacity: 0.3;
 }
 
+.main-nav__item-link svg:active {
+  opacity: 0.3;
+}
+
 .main-nav__item-search {
   position: absolute;
   top: 30px;
@@ -152,6 +156,7 @@
   .main-nav {
     position: static;
     padding: 0 50px;
+    padding-top: 26px;
   }
 
   .main-nav__button {
@@ -244,6 +249,10 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    padding: 0 50px;
+  }
+
+  .main-nav--index {
     padding: 0 100px;
   }
 
@@ -275,18 +284,23 @@
 
   .main-nav__item-search {
     position: absolute;
-    top: 33px;
+    top: 37px;
     left: 32px;
   }
 
   .main-nav__item-link--search {
     padding: 44px 40px;
-    margin-right: 86px;
+    margin-right: 50px;
   }
 
   .main-nav__item-basket {
-    top: 33px;
+    top: 35px;
     left: -53px;
+  }
+
+  .main-nav__item-link--basket {
+    margin-top: -2px;
+    margin-right: 2px;
   }
 
   .main-nav__site-navigation {
@@ -301,9 +315,14 @@
   .main-nav__info-navigation {
     display: flex;
     position: absolute;
-    right: 100px;
-    left: 100px;
+    right: 50px;
+    left: 50px;
     bottom: -40px;
+  }
+
+  .main-nav__info-navigation--index {
+    left: 100px;
+    right: 100px;
   }
 
   .main-nav__info-navigation .main-nav__item {
