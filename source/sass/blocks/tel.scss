@@ -26,6 +26,27 @@
   }
 }
 
+.tel input::-webkit-input-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+.tel input::-moz-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+.tel input:-ms-input-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+
 .tel__icon {
   position: absolute;
   top: 32px;

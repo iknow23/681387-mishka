@@ -21,6 +21,16 @@
   }
 }
 
+.filter input,
+.filter textarea {
+  color: #444444;
+}
+
+.filter input:focus,
+.filter textarea:focus {
+  color: #444444;
+}
+
 .filter h3 {
   text-transform: uppercase;
 }

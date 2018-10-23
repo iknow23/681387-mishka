@@ -30,6 +30,27 @@
   }
 }
 
+.comment textarea::-webkit-input-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+.comment textarea::-moz-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+
+.comment textarea:-ms-input-placeholder {
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .comment {
     display: flex;
