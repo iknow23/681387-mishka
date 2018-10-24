@@ -24,6 +24,7 @@
   justify-content: space-between;
 
   @include indents-zero;
+  padding-right: 3px;
   line-height: 30px;
 }
 
@@ -31,15 +32,8 @@
   width: 182px;
 }
 
-// .contacts__mail--current {
-//   border-bottom: 1px solid #63d1bb;
-//
-//   &:active {
-//     border-color: rgba(70, 193, 174, 0.1);
-//   }
-// }
-
 .contacts__mail-link {
+  padding-bottom: 3px;
   text-decoration: none;
   color: inherit;
   border-bottom: 1px solid #63d1bb;
@@ -173,11 +167,18 @@
     display: block;
     width: 350px;
     margin-left: 174px;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
   }
 
   .contacts__table-row:first-of-type {
     margin-bottom: 30px;
+  }
+
+  .contacts__mail-link {
+    display: block;
+    margin-right: -4px;
+    margin-top: -2px;
+    padding-bottom: 0;
   }
 
   .contacts__button {

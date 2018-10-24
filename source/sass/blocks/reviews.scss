@@ -1,11 +1,14 @@
+.container-reviews {
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
 .reviews {
   margin-bottom: 36px;
   padding-bottom: 50px;
   color: $main-color;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
 }
 
 .reviews__title {
@@ -182,6 +185,7 @@
   .reviews__title {
     margin-top: 70px;
     margin-left: 172px;
+    margin-bottom: 50px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -197,5 +201,9 @@
   .reviews__text {
     margin-bottom: 40px;
     padding-right: 100px;
+  }
+
+  .reviews__text-current {
+    display: block;
   }
 }
