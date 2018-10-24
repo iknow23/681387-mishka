@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 180px;
+  min-height: 178px;
   margin-bottom: 532px;
 }
 
@@ -115,7 +115,7 @@
 
   .contacts__table-row:first-of-type {
     align-self: flex-start;
-    width: 280px;
+    width: 283px;
   }
 
   .contacts__table-row:last-of-type {
@@ -163,8 +163,8 @@
 
   .contacts__title {
     position: relative;
-    margin-left: 170px;
-    margin-top: 143px;
+    margin-left: 167px;
+    margin-top: 140px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -173,7 +173,7 @@
     content: "";
     position: absolute;
     top: -8px;
-    left: -108px;
+    left: -104px;
     width: 47px;
     height: 81px;
     background-image: url("../img/icon-flag.svg");
@@ -188,6 +188,7 @@
   }
 
   .contacts__table-row:first-of-type {
+    width: 280px;
     margin-bottom: 30px;
   }
 

@@ -126,7 +126,7 @@
     min-height: 334px;
 
     &:not(:last-of-type) {
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
   }
 
@@ -156,10 +156,6 @@
 
   .catalog__price {
     font-size: 17px;
-  }
-
-  .catalog__item:not(:last-of-type) {
-    margin-bottom: 50px;
   }
 }
 

@@ -1,5 +1,5 @@
 .container-reviews {
-  background-image: url(../img/bg-zigzag-line.svg);
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -54,13 +54,13 @@
   display: flex;
   width: 100%;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .reviews-nav__prev,
 .reviews-nav__next {
   flex-grow: 1;
-  height: 50px;
+  height: 53px;
   background-color: transparent;
   border: 1px solid #ececec;
   background-repeat: no-repeat;

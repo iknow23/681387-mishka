@@ -109,6 +109,7 @@
 
   .sale__title {
     margin-bottom: 0;
+    margin-left: -4px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -133,7 +134,7 @@
   }
 
   .sale__description {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -172,7 +173,7 @@
   .sale__title {
     order: 2;
     margin-top: -2px;
-    padding-left: 30px;
+    padding-left: 33px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -200,11 +201,24 @@
 
   .sale__characteristics {
     margin-bottom: 102px;
+    margin-left: -4px;
   }
 
   .sale__characteristics tr {
-    margin-bottom: 6px;
-    padding-bottom: 7px;
+    margin-bottom: 3px;
+    padding-bottom: 10px;
+  }
+
+  .sale__color {
+    padding-right: 53px;
+  }
+
+  .sale__size {
+    padding-right: 28px;
+  }
+
+  .sale__height {
+    padding-right: 38px;
   }
 
   .sale__price {

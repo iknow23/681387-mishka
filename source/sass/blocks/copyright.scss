@@ -72,3 +72,15 @@
     margin-top: -8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright--catalog {
+    position: relative;
+    top: -7px;
+  }
+
+  .copyright--form {
+    position: relative;
+    top: -7px;
+  }
+}

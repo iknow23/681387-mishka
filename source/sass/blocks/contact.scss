@@ -37,7 +37,7 @@
 .contact input[type="text"]::-webkit-input-placeholder,
 .contact input[type="text"]::-moz-placeholder,
 .contact input[type="text"]:-ms-input-placeholder {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,14 +73,8 @@
   }
 }
 
-.contact input::-webkit-input-placeholder {
-  font-size: 19px;
-}
-
-.contact input::-moz-placeholder {
-  font-size: 19px;
-}
-
+.contact input::-webkit-input-placeholder,
+.contact input::-moz-placeholder,
 .contact input:-ms-input-placeholder {
   font-size: 19px;
 }

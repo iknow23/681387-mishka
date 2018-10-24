@@ -30,6 +30,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+
 var modalToggleCatalog = document.querySelector(".catalog__basket-add");
 
 modalToggleCatalog.addEventListener("click", function(evt) {
