@@ -27,22 +27,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__site-navigation">
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__item-link" href="catalog.html" title="Переход на страницу каталога в новом окне">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="form.html">Вязание на заказ</a>
+              <a class="main-nav__item-link" href="form.html" title="Переход на страницу заказа товара в новом окне">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__user-navigation">
             <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--search" href="#">
+              <a class="main-nav__item-link main-nav__item-link--search" href="#" title="Поиск товара" aria-label="Форма поиска товара">
                 <svg class="main-nav__item-search" width="18" height="18">
                   <use xlink:href="#icon-search"></use>
                 </svg>
                 Поиск по сайту</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--basket" href="#">
+              <a class="main-nav__item-link main-nav__item-link--basket" href="#" title="Товары кидай сюда" aria-label="Корзина с выбранными товарами">
                 <svg class="main-nav__item-basket" width="21" height="18">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -52,10 +52,10 @@
         </div>
         <ul class="main-nav__info-navigation main-nav__info-navigation--index">
           <li class="main-nav__item main-nav__item--hidden">
-            <a class="main-nav__item-link" href="#">Новые поступления</a>
+            <a class="main-nav__item-link" href="#" title="Переход на страницу с новыми поступлениями">Новые поступления</a>
           </li>
           <li class="main-nav__item main-nav__item--hidden">
-            <a class="main-nav__item-link" href="#">Распродажа</a>
+            <a class="main-nav__item-link" href="#" title="Переход на страницу с распродажами">Распродажа</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__item-link main-nav__item-link--rus" href="#">Бесплатная доставка по России</a>
@@ -73,13 +73,13 @@
             <li class="products__item">
               <a class="products__link products__link--interior" href="catalog-interyer.html">
                 <p class="products__types-interior">Предметы интерьера</p>
-                <img class="products__interior-image" src="img/icon-interior.svg" alt="Иконка настольной лампы">
+                <img class="products__interior-image" width="41" height="63" src="img/icon-interior.svg" alt="Иконка настольной лампы">
               </a>
             </li>
             <li class="products__item">
               <a class="products__link products__link--child" href="catalog-child.html">
                 <p class="products__types-child">Детские игрушки</p>
-                <img class="products__child-image" src="img/icon-toy.svg" alt="Иконка детали конструктора Лего">
+                <img class="products__child-image" width="60" height="60" src="img/icon-toy.svg" alt="Иконка детали конструктора Лего">
               </a>
             </li>
           </ul>
@@ -167,13 +167,13 @@
                     </b>
                   </cite>
                   <p class="reviews-nav">
-                    <button class="reviews-nav__prev" type="button" aria-label="Предыдущий отзыв"></button>
-                    <button class="reviews-nav__next" type="button" aria-label="Следующий отзыв"></button>
+                    <button class="reviews-nav__prev" type="button" title="Предыдущий отзыв" aria-label="Предыдущий отзыв"></button>
+                    <button class="reviews-nav__next" type="button" title="Следующий отзыв" aria-label="Следующий отзыв"></button>
                   </p>
                 </footer>
               </blockquote>
             </div>
-            <a class="reviews__write btn" href="#">Написать</a>
+            <a class="reviews__write btn" href="reviews.html">Написать</a>
           </div>
         </section>
       </div>
@@ -196,6 +196,7 @@
             </ul>
           </article>
           <p class="contacts__map">
+            <iframe class="contacts__map-interactive" width="525" height="457" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1998.6031394416946!2d30.32254314333195!3d59.93872723058061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!3m2!1d59.9387165!2d30.3230474!5e0!3m2!1sru!2sru!4v1540365874716" style="border:0" allowfullscreen></iframe>
             <picture>
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp, img/map-tablet@2x.webp 2x">
@@ -206,7 +207,7 @@
               <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Изображение на карте места расположения">
             </picture>
           </p>
-          <a class="contacts__button btn" href="#">Напишите нам</a>
+          <a class="contacts__button btn" href="feedback.html">Напишите нам</a>
         </div>
       </section>
 
@@ -214,7 +215,7 @@
 
     <footer class="page-footer">
       <div class="container">
-        <a class="page-footer__logo logo" href="index.html">
+        <a class="page-footer__logo logo" href="index.html" title="На верх страницы" aria-label="Переход на верх страницы">
           <svg class="page-footer__logo-image" width="101.615px" height="34.056px">
             <use xlink:href="#icon-logo-footer"></use>
           </svg>
@@ -222,21 +223,21 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм">
+              <a class="social__link social__link--instagram" href="#" title="Переход на страницу сайта в Инстаграме" aria-label="Переход на страницу сайта в Инстаграме">
                 <svg width="21.769px" height="21.334px">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
+              <a class="social__link social__link--facebook" href="#" title="Переход на страницу сайта в Фейсбук" aria-label="Переход на страницу сайта в Фейсбук">
                 <svg width="14.962px" height="27.718px">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#" aria-label="Твиттер">
+              <a class="social__link social__link--twitter" href="#" title="Переход на страницу сайта в Твиттер" aria-label="Переход на страницу сайта в Твиттер">
                 <svg width="23.494px" height="20.168px">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
@@ -246,7 +247,7 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на сайт HTML-Academy" aria-label="Переход на сайт HTML-Academy">
             <b class="copyright__text">Разработано</b>
             <svg class="copyright__image" width="50" height="40">
               <use xlink:href="#icon-htmlacademy"></use>

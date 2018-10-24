@@ -19,6 +19,11 @@
   }
 }
 
+.page-header__logo-image {
+  width: 85px;
+  height: 35px;
+}
+
 .page-header__logo img:active {
   opacity: 0.3;
 }
@@ -36,6 +41,11 @@
     z-index: 3;
     left: 50px;
   }
+
+  .page-header__logo-image {
+    width: 112px;
+    height: 47px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -48,5 +58,10 @@
     top: 6px;
     left: 50%;
     margin-left: -75px;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 73px;
   }
 }

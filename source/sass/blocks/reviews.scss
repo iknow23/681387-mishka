@@ -94,18 +94,10 @@
     padding-left: 50px;
     padding-bottom: 130px;
     padding-top: 78px;
-    background-image:
-      url("../img/review@1x.jpg"),
-      url("../img/bg-zigzag-line.svg");
-    background-repeat:
-      no-repeat,
-      no-repeat;
-    background-position:
-      0 0,
-      bottom;
-    background-size:
-      auto,
-      contain;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
