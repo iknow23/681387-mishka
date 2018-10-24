@@ -30,22 +30,22 @@
   }
 }
 
-.comment textarea::-webkit-input-placeholder {
-  font-size: 19px;
+.comment input[type="textarea"]::-webkit-input-placeholder {
+  font-size: 17px;
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
 }
 
-.comment textarea::-moz-placeholder {
-  font-size: 19px;
+.comment input[type="textarea"]::-moz-placeholder {
+  font-size: 17px;
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
 }
 
-.comment textarea:-ms-input-placeholder {
-  font-size: 19px;
+.comment input[type="textarea"]:-ms-input-placeholder {
+  font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
 }
@@ -65,6 +65,12 @@
     padding-left: 12px;
     font-size: 19px;
     box-sizing: border-box;
+  }
+
+  .comment input[type="textarea"]::-webkit-input-placeholder,
+  .comment input[type="textarea"]::-moz-placeholder,
+  .comment input[type="textarea"]:-ms-input-placeholder {
+    font-size: 19px;
   }
 }
 

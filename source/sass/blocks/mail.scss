@@ -26,22 +26,22 @@
   }
 }
 
-.mail input::-webkit-input-placeholder {
-  font-size: 19px;
+.mail input[type="email"]::-webkit-input-placeholder {
+  font-size: 17px;
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
 }
 
-.mail input::-moz-placeholder {
-  font-size: 19px;
+.mail input[type="email"]::-moz-placeholder {
+  font-size: 17px;
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
 }
 
-.mail input:-ms-input-placeholder {
-  font-size: 19px;
+.mail input[type="email"]:-ms-input-placeholder {
+  font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
 }
@@ -87,6 +87,12 @@
     font-size: 19px;
     background-color: transparent;
     box-sizing: border-box;
+  }
+
+  .mail input[type="email"]::-webkit-input-placeholder,
+  .mail input[type="email"]::-moz-placeholder,
+  .mail input[type="email"]:-ms-input-placeholder {
+    font-size: 19px;
   }
 
   .mail__icon {
