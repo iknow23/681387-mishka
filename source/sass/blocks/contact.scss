@@ -17,7 +17,7 @@
 
 .contact__group label {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .contact input {
@@ -25,6 +25,8 @@
   width: 100%;
   padding: 0;
   padding-bottom: 18px;
+  font-size: 17px;
+  line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
   cursor: pointer;
@@ -83,14 +85,23 @@
   .contact {
     padding-left: 60px;
     padding-right: 174px;
+    padding-bottom: 14px;
   }
 
   .contact__title {
     margin-right: 74px;
   }
 
+  .contact__group {
+    margin-bottom: 36px;
+  }
+
+  .contact__group label {
+    padding-top: 1px;
+  }
+
   .contact__group:first-of-type input {
-    margin-top: -2px;
+    margin-top: -6px;
     padding-bottom: 14px;
   }
 }

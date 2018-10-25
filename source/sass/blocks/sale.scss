@@ -3,7 +3,7 @@
   padding-bottom: 40px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 18px bottom;
   background-size: contain;
 }
 
@@ -71,13 +71,14 @@
 }
 
 .sale__image {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .sale__price {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   font-size: 17px;
+  line-height: 24px;
 
   @include bold;
   color: $main-color;
@@ -85,6 +86,7 @@
 }
 
 .sale__button {
+  padding-bottom: 13px;
   line-height: 20px;
 
   @include bold;

@@ -87,8 +87,16 @@
   }
 
   .type__input-radio:checked + label::after {
-    top: 3px;
-    left: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/radio-on.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 19px;
   }
 
   .type__group:not(:last-child) {

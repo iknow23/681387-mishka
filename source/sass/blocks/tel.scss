@@ -14,9 +14,9 @@
   display: block;
   width: 100%;
   padding: 0;
-  padding-top: 3px;
   padding-bottom: 14px;
   font-size: 19px;
+  line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
   cursor: pointer;
@@ -50,6 +50,13 @@
   position: absolute;
   top: 32px;
   right: 8px;
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+input:hover ~ .tel__icon path,
+input:focus ~ .tel__icon path {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -111,6 +118,10 @@
   .tel__title {
     width: 113px;
     margin-right: 0;
+  }
+
+  .tel input {
+    padding: 7px 60px 14px 18px;
   }
 
   .tel__icon {

@@ -3,7 +3,7 @@
   background-color: #f1f1f1;
 }
 
-.page-footer .container {
+.page-footer__container {
   display: flex;
   flex-direction: column;
   min-height: 160px;
@@ -36,7 +36,7 @@
     min-height: 142px;
   }
 
-  .page-footer .container {
+  .page-footer__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -59,7 +59,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer .container {
+  .page-footer__container {
     align-items: baseline;
     width: 1150px;
     padding-top: 73px;

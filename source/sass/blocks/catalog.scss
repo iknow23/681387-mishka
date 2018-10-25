@@ -5,6 +5,8 @@
 .catalog__title {
   margin: 0;
   margin-bottom: 30px;
+  margin-left: -30px;
+  margin-right: -30px;
   padding: 70px 0 76px 0;
 
   @include bold;
@@ -32,7 +34,7 @@
 
 .catalog__product-title {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -50,7 +52,9 @@
 
 .catalog__description {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 .catalog__item-container {
@@ -106,6 +110,8 @@
 
   .catalog__title {
     margin-bottom: 67px;
+    margin-left: -50px;
+    margin-right: -50px;
     padding: 94px 0 92px 0;
     font-size: 43px;
     line-height: 50px;
@@ -139,6 +145,11 @@
     padding: 24px 32px 30px 26px;
   }
 
+  .catalog__item picture {
+    display: block;
+    height: 333px;
+  }
+
   .catalog__product-title {
     padding-right: 36px;
     font-size: 20px;
@@ -146,6 +157,7 @@
 
   .catalog__description {
     font-size: 15px;
+    line-height: 30px;
     margin-bottom: 21px;
   }
 
@@ -166,6 +178,8 @@
 
   .catalog__title {
     margin-bottom: 112px;
+    margin-left: -50px;
+    margin-right: -50px;
     padding-bottom: 118px;
     font-size: 53px;
     line-height: 57px;
@@ -192,6 +206,11 @@
     height: 100%;
     min-height: 147px;
     padding: 26px 32px 22px 28px;
+  }
+
+  .catalog__item picture {
+    display: block;
+    height: 457px;
   }
 
   .catalog__product-title {

@@ -50,6 +50,13 @@
   position: absolute;
   right: 4px;
   top: 34px;
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+input:hover ~ .mail__icon path,
+input:focus ~ .mail__icon path {
+  fill: #62d1ba;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {

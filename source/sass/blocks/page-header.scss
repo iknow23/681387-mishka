@@ -34,6 +34,7 @@
     display: flex;
     padding-top: 6px;
     min-height: 90px;
+    border-bottom: 1px solid #e7e7e7;
   }
 
   .page-header__logo {
@@ -50,7 +51,8 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    // justify-content: center;
+    width: 1150px;
+    margin: 0 auto;
     padding-top: 0;
   }
 
