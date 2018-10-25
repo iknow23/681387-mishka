@@ -16,10 +16,12 @@ navToggle.addEventListener("click", function() {
 var modalToggle = document.querySelector(".sale__button");
 var modal = document.querySelector(".overlay");
 
-modalToggle.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modal.classList.add("overlay--show");
-});
+if (modalToggle) {
+  modalToggle.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modal.classList.add("overlay--show");
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -30,13 +32,15 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var modalToggleCatalog = document.querySelector(".catalog__basket-add");
+var modalToggleCatalog = document.querySelectorAll(".catalog__basket-add");
 
 if (modalToggleCatalog) {
-  modalToggleCatalog.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modal.classList.add("overlay--show");
-  });
+  for (var i=0; i<modalToggleCatalog.length; i++) {
+    modalToggleCatalog[i].addEventListener("click", function(evt) {
+      evt.preventDefault();
+      modal.classList.add("overlay--show");
+    });
+  };
 }
 
 window.addEventListener("keydown", function (evt) {
