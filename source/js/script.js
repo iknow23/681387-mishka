@@ -30,13 +30,14 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
 var modalToggleCatalog = document.querySelector(".catalog__basket-add");
 
-modalToggleCatalog.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modal.classList.add("overlay--show");
-});
+if (modalToggleCatalog) {
+  modalToggleCatalog.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modal.classList.add("overlay--show");
+  });
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
