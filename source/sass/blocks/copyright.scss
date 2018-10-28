@@ -13,6 +13,10 @@
   width: 100%;
   text-decoration: none;
   color: #000000;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -21,10 +25,6 @@
   line-height: 18px;
 
   @include bold;
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .copyright__text--catalog {
@@ -43,10 +43,6 @@
 .copyright__image:hover,
 .copyright__image:focus {
   fill: rgba(70, 193, 174, 1);
-}
-
-.copyright__image:active {
-  fill: rgba(70, 193, 174, 0.3);
 }
 
 @media (min-width: $tablet-width) {

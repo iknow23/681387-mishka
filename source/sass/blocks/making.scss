@@ -18,11 +18,11 @@
   transition: all 0.5s ease-in;
 }
 
-.making__button-icon:hover {
+.making__button-link:hover svg {
   transform: scale(1.2);
 }
 
-.making__button-icon:active {
+.making__button-link:active svg {
   transform: scale(0.8);
   opacity: 0.3;
 }

@@ -164,6 +164,8 @@
 @media (min-width: $desktop-width) {
   .sale {
     position: relative;
+    width: 1150px;
+    margin: 0 auto;
     margin-bottom: 60px;
     padding-bottom: 96px;
   }
@@ -230,7 +232,7 @@
   .sale__image {
     position: absolute;
     top: -60px;
-    right: 100px;
+    right: 50px;
     z-index: -1;
     width: 525px;
     height: 636px;

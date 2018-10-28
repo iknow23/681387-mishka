@@ -173,7 +173,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin-bottom: 55px;
+    margin-bottom: 5px;
   }
 
   .catalog__title {
@@ -187,6 +187,7 @@
 
   .catalog__list {
     display: flex;
+    flex-wrap: wrap;
     width: 1050px;
     min-height: 660px;
   }
@@ -194,10 +195,10 @@
   .catalog__item {
     flex-direction: column;
     width: 315px;
+    margin-bottom: 50px;
   }
 
-  .catalog__item:not(:last-of-type) {
-    margin-bottom: 0;
+  .catalog__item:not(:nth-child(3n)) {
     margin-right: 50px;
   }
 

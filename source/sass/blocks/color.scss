@@ -85,6 +85,10 @@
     margin-bottom: 58px;
   }
 
+  .color__group:last-child {
+    margin-bottom: 58px;
+  }
+
   .color__filter-group {
     display: flex;
     flex-wrap: wrap;
@@ -125,5 +129,6 @@
 
   .color__group {
     width: 208px;
+    margin-bottom: 58px;
   }
 }

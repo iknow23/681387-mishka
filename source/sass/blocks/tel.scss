@@ -53,8 +53,8 @@
   fill: rgba(0, 0, 0, 0.2);
 }
 
-input:hover ~ .tel__icon path,
-input:focus ~ .tel__icon path {
+input:hover ~ .tel__icon,
+input:focus ~ .tel__icon {
   fill: #62d1ba;
   opacity: 1;
 }

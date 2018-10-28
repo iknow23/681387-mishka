@@ -53,8 +53,8 @@
   fill: rgba(0, 0, 0, 0.2);
 }
 
-input:hover ~ .mail__icon path,
-input:focus ~ .mail__icon path {
+input:hover ~ .mail__icon,
+input:focus ~ .mail__icon {
   fill: #62d1ba;
   opacity: 1;
 }

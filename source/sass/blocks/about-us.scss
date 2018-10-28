@@ -8,17 +8,8 @@
   line-height: 30px;
 }
 
-.about-us__list,
-.about-us__list-sub {
+.about-us__list {
   @include indents-zero;
-}
-
-.about-us__item-group:first-child .about-us__list-sub {
-  width: 200px;
-}
-
-.about-us__item-group:last-child .about-us__list-sub {
-  width: 250px;
 }
 
 .about-us__list {
@@ -33,6 +24,14 @@
 .about-us__item {
   padding-top: 84px;
   background-repeat: no-repeat;
+}
+
+.about-us__item-group:first-of-type {
+  width: 200px;
+}
+
+.about-us__item-group:last-of-type {
+  width: 250px;
 }
 
 .about-us__item--ecology {
@@ -89,18 +88,18 @@
     flex-direction: column;
   }
 
+  .about-us__item-group:first-of-type {
+    width: 250px;
+  }
+
+  .about-us__item-group:last-of-type {
+    width: 334px;
+  }
+
   .about-us__item {
     margin-bottom: 28px;
     font-size: 20px;
     line-height: 22px;
-  }
-
-  .about-us__item-group:first-child .about-us__list-sub {
-    width: 250px;
-  }
-
-  .about-us__item-group:last-child .about-us__list-sub {
-    width: 334px;
   }
 
   .about-us__item--ecology {
@@ -137,9 +136,25 @@
     justify-content: center;
   }
 
-  .about-us__item-group:first-of-type .about-us__list-sub {
+  .about-us__item-group:first-of-type {
     margin-right: 100px;
     margin-left: -16px;
     padding-right: -29px;
+  }
+
+  .about-us__item--ecology {
+    background-position: 8px 28px;
+  }
+
+  .about-us__item--cost {
+    background-position: 0 29px;
+  }
+
+  .about-us__item--like {
+    background-position: 8px 34px;
+  }
+
+  .about-us__item--native {
+    background-position: -6px 32px;
   }
 }
