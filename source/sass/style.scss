@@ -1,8 +1,8 @@
 /*Подключаем переменные*/
+@import "_normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "global.scss";
-@import "normalize.scss";
 /*Подключаем стили блоков главной страницы*/
 @import "blocks/container.scss";
 @import "blocks/page-header.scss";
