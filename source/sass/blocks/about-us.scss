@@ -6,12 +6,9 @@
 
 .about-us__title {
   margin: 0;
+  margin-left: -2px;
   font-size: 25px;
   line-height: 30px;
-}
-
-.about-us__list {
-  @include indents-zero;
 }
 
 .about-us__list {
@@ -21,6 +18,7 @@
   line-height: 20px;
 
   @include bold;
+  @include indents-zero;
 }
 
 .about-us__item {
@@ -28,12 +26,8 @@
   background-repeat: no-repeat;
 }
 
-.about-us__item-group:first-of-type {
-  width: 200px;
-}
-
-.about-us__item-group:last-of-type {
-  width: 250px;
+.about-us__item span {
+  display: block;
 }
 
 .about-us__item--ecology {
@@ -44,22 +38,24 @@
 
 .about-us__item--cost {
   background-image: url("../img/icon-feature-money.svg");
-  background-position: 0 34px;
+  background-position: 0 32px;
 }
 
 .about-us__item--like {
   background-image: url("../img/icon-feature-heart.svg");
-  background-position: 6px 38px;
+  background-position: 6px 36px;
 }
 
 .about-us__item--manually {
+  padding-top: 82px;
   background-image: url("../img/icon-feature-ball.svg");
   background-position: 4px 32px;
 }
 
 .about-us__item--native {
+  padding-top: 83px;
   background-image: url("../img/icon-feature-rocket.svg");
-  background-position: 0 32px;
+  background-position: -3px 32px;
 }
 
 .about-us__item--gift {
@@ -84,42 +80,40 @@
 
   .about-us__list {
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .about-us__item-group {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-us__item-group:first-of-type {
-    width: 250px;
-  }
-
-  .about-us__item-group:last-of-type {
-    width: 334px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .about-us__item {
+    width: 334px;
     margin-bottom: 28px;
     font-size: 20px;
     line-height: 22px;
   }
 
   .about-us__item--ecology {
-    width: 230px;
+    order: 1;
+    background-position: 8px 28px;
+  }
+
+  .about-us__item--cost {
+    order: 3;
   }
 
   .about-us__item--like {
-    width: 220px;
+    order: 5;
   }
 
   .about-us__item--manually {
-    width: 260px;
+    order: 2;
+  }
+
+  .about-us__item--native {
+    order: 4;
   }
 
   .about-us__item--gift {
-    width: 250px;
+    order: 6;
   }
 }
 
@@ -133,19 +127,19 @@
   .about-us__title {
     margin-left: 0;
     margin-top: 0;
+    margin-bottom: 18px;
     padding-left: 170px;
     font-size: 53px;
     line-height: 57px;
   }
 
   .about-us__list {
-    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
   }
 
-  .about-us__item-group:first-of-type {
-    margin-right: 100px;
-    margin-left: -16px;
-    padding-right: -29px;
+  .about-us__item {
+    width: 350px;
   }
 
   .about-us__item--ecology {

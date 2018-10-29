@@ -1,11 +1,11 @@
 .sale {
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   padding-bottom: 40px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
-  background-position: 18px bottom;
+  background-position: bottom;
   background-size: contain;
 }
 
@@ -42,6 +42,7 @@
 .sale__characteristics {
   display: block;
   margin-bottom: 20px;
+  margin-left: -2px;
   line-height: 20px;
   color: $main-color;
 }
@@ -103,7 +104,7 @@
   .sale {
     max-width: 768px;
     margin: 0 auto;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
     padding-bottom: 66px;
   }
 
@@ -123,8 +124,8 @@
   .sale__title-description {
     align-self: center;
     width: 115px;
-    padding-right: 6px;
-    padding-top: 6px;
+    padding-right: 10px;
+    padding-top: 4px;
     line-height: 17px;
     text-align: center;
   }
@@ -140,7 +141,8 @@
   }
 
   .sale__description {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+    margin-top: -2px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -150,12 +152,12 @@
     top: 0;
     right: 0;
     width: 333px;
-    height: 404px;
     padding-top: 8px;
   }
 
   .sale__characteristics {
     margin-bottom: 48px;
+    margin-left: -2px;
   }
 
   .sale__price {
@@ -163,12 +165,16 @@
     font-size: 20px;
     line-height: 24px;
   }
+
+  .sale__button {
+    margin-left: -2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .sale {
     position: relative;
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
     margin-bottom: 60px;
     padding-bottom: 96px;
@@ -176,6 +182,7 @@
 
   .sale__header {
     justify-content: flex-start;
+    margin-left: -50px;
   }
 
   .sale__title {
@@ -196,7 +203,7 @@
     position: static;
     justify-content: flex-start;
     width: 292px;
-    margin-left: 176px;
+    margin-left: 126px;
   }
 
   .sale__text {
@@ -205,10 +212,11 @@
 
   .sale__description {
     margin-bottom: 52px;
+    margin-top: 0;
   }
 
   .sale__characteristics {
-    margin-bottom: 102px;
+    margin-bottom: 103px;
     margin-left: -4px;
   }
 
@@ -233,12 +241,14 @@
     padding-right: 2px;
   }
 
+  .sale__button {
+    margin-left: 0;
+  }
+
   .sale__image {
     position: absolute;
     top: -60px;
-    right: 50px;
     z-index: -1;
     width: 525px;
-    height: 636px;
   }
 }

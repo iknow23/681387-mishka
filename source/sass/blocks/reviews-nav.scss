@@ -12,7 +12,7 @@
   background-color: transparent;
   border: 1px solid #ececec;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 36px;
 
   &:hover,
   &:focus {
@@ -43,6 +43,7 @@
 
   .reviews-nav__prev,
   .reviews-nav__next {
+    background-position: center;
     border: none;
   }
 }

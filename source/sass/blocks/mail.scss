@@ -73,7 +73,8 @@ input:focus ~ .mail__icon {
     width: 167px;
     margin: 0;
     margin-left: 50px;
-    padding-top: 14px;
+    padding-top: 12px;
+    padding-left: 2px;
   }
 
   .mail__filter-group {
@@ -125,6 +126,8 @@ input:focus ~ .mail__icon {
   .mail__title {
     width: 113px;
     margin-right: 0;
+    padding-top: 16px;
+    padding-left: 0;
   }
 
   .mail__icon {

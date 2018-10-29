@@ -34,7 +34,7 @@
 
 .catalog__product-title {
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -58,7 +58,7 @@
 }
 
 .catalog__item-container {
-  padding: 24px 28px 26px 28px;
+  padding: 26px 27px;
   cursor: pointer;
 }
 
@@ -132,7 +132,7 @@
     min-height: 334px;
 
     &:not(:last-of-type) {
-      margin-bottom: 50px;
+      margin-bottom: 53px;
     }
   }
 
@@ -142,7 +142,7 @@
     justify-content: space-between;
     width: 333px;
     min-height: 282px;
-    padding: 24px 32px 30px 26px;
+    padding: 24px 32px 28px 26px;
   }
 
   .catalog__item picture {
@@ -155,6 +155,10 @@
     font-size: 20px;
   }
 
+  .catalog__item:nth-child(2) .catalog__product-title {
+    margin-bottom: 9px;
+  }
+
   .catalog__description {
     font-size: 15px;
     line-height: 30px;
@@ -162,7 +166,7 @@
   }
 
   .catalog__choice {
-    padding-top: 24px;
+    padding-top: 21px;
     padding-left: 5px;
   }
 
@@ -177,10 +181,11 @@
   }
 
   .catalog__title {
-    margin-bottom: 112px;
+    margin-bottom: 115px;
     margin-left: -50px;
     margin-right: -50px;
     padding-bottom: 118px;
+    padding-top: 92px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -188,13 +193,16 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 1050px;
     min-height: 660px;
   }
 
   .catalog__item {
     flex-direction: column;
+    justify-content: flex-start;
     width: 315px;
+    min-height: auto;
     margin-bottom: 50px;
   }
 
@@ -202,25 +210,37 @@
     margin-right: 50px;
   }
 
+  .catalog__item:first-of-type .catalog__item-container {
+    padding: 27px 35px 24px 27px;
+  }
+
   .catalog__item-container {
     width: 316px;
-    height: 100%;
-    min-height: 147px;
-    padding: 26px 32px 22px 28px;
+    min-height: auto;
+    padding: 26px 35px 33px 25px;
   }
 
   .catalog__item picture {
     display: block;
-    height: 457px;
+    height: auto;
   }
 
   .catalog__product-title {
+    margin-bottom: 5px;
     padding-right: 20px;
   }
 
+  .catalog__item:nth-child(2) .catalog__product-title {
+    margin-bottom: 7px;
+  }
+
   .catalog__choice {
+    margin-top: 28px;
     padding-left: 0;
     padding-top: 22px;
-    padding-bottom: 4px;
+  }
+
+  .catalog__description {
+    margin-bottom: 10px;
   }
 }
