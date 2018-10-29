@@ -32,24 +32,27 @@
   }
 }
 
-.comment input[type="textarea"]::-webkit-input-placeholder {
+.comment textarea::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
+  @include normal;
 }
 
-.comment input[type="textarea"]::-moz-placeholder {
+.comment textarea::-moz-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
+  @include normal;
 }
 
-.comment input[type="textarea"]:-ms-input-placeholder {
+.comment textarea:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
+  @include normal;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,9 +72,15 @@
     box-sizing: border-box;
   }
 
-  .comment input[type="textarea"]::-webkit-input-placeholder,
-  .comment input[type="textarea"]::-moz-placeholder,
-  .comment input[type="textarea"]:-ms-input-placeholder {
+  .comment textarea::-webkit-input-placeholder {
+    font-size: 19px;
+  }
+
+  .comment textarea::-moz-placeholder {
+    font-size: 19px;
+  }
+
+  .comment textarea:-ms-input-placeholder {
     font-size: 19px;
   }
 }

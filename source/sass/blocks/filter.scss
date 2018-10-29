@@ -2,7 +2,9 @@
   padding-bottom: 60px;
   font-size: 17px;
   line-height: 18px;
+}
 
+.filter label {
   @include bold;
 }
 

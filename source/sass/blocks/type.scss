@@ -102,11 +102,29 @@
   .type__group:not(:last-child) {
     margin-bottom: 58px;
   }
+
+  .type__group:first-of-type label {
+    padding-right: 0;
+  }
+
+  .type__group:last-of-type label {
+    width: 235px;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .type__title {
     margin-right: 93px;
     margin-left: 64px;
+  }
+
+  .type__group:first-of-type label {
+    padding-right: 0;
+  }
+
+  .type__group:last-of-type label {
+    width: 235px;
+    padding-right: 0;
   }
 }

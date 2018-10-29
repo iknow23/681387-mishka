@@ -21,7 +21,8 @@
   border-bottom: 2px solid #000000;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 2px solid #62d1ba;
   }
 }
@@ -31,6 +32,7 @@
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
+  @include normal;
 }
 
 .tel input::-moz-placeholder {
@@ -38,12 +40,14 @@
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
+  @include normal;
 }
 
 .tel input:-ms-input-placeholder {
   font-size: 19px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
+  @include normal;
 }
 
 .tel__icon {

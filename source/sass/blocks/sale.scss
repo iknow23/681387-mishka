@@ -34,15 +34,14 @@
 
 .sale__description {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   color: $main-color;
   line-height: 24px;
 }
 
 .sale__characteristics {
   display: block;
-  margin-bottom: 20px;
-  margin-left: -2px;
+  margin-bottom: 22px;
   line-height: 20px;
   color: $main-color;
 }
@@ -57,24 +56,24 @@
   width: 100%;
   margin-bottom: 7px;
   padding-top: 2px;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
 .sale__color {
-  padding-right: 52px;
+  padding-right: 55px;
 }
 
 .sale__size {
-  padding-right: 24px;
+  padding-right: 30px;
 }
 
 .sale__height {
-  padding-right: 35px;
+  padding-right: 40px;
 }
 
 .sale__image {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .sale__price {
@@ -111,7 +110,7 @@
   .sale__header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   .sale__title {
@@ -141,7 +140,7 @@
   }
 
   .sale__description {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
     margin-top: -2px;
     font-size: 17px;
     line-height: 30px;
@@ -152,12 +151,11 @@
     top: 0;
     right: 0;
     width: 333px;
-    padding-top: 8px;
+    padding-top: 6px;
   }
 
   .sale__characteristics {
     margin-bottom: 48px;
-    margin-left: -2px;
   }
 
   .sale__price {
@@ -176,7 +174,7 @@
     position: relative;
     max-width: 1050px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     padding-bottom: 96px;
   }
 
@@ -211,22 +209,21 @@
   }
 
   .sale__description {
-    margin-bottom: 52px;
+    margin-bottom: 55px;
     margin-top: 0;
   }
 
   .sale__characteristics {
     margin-bottom: 103px;
-    margin-left: -4px;
   }
 
   .sale__characteristics tr {
-    margin-bottom: 3px;
-    padding-bottom: 10px;
+    margin-bottom: 4px;
+    padding-bottom: 13px;
   }
 
   .sale__color {
-    padding-right: 53px;
+    padding-right: 54px;
   }
 
   .sale__size {

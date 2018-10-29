@@ -114,6 +114,35 @@
   .color__group {
     width: 205px;
   }
+
+  .color__group:first-of-type label {
+    width: 125px;
+  }
+
+  .color__group:nth-child(2) label {
+    width: 125px;
+    padding-right: 0;
+  }
+
+  .color__group:nth-child(3) label {
+    width: 175px;
+    padding-right: 0;
+  }
+
+  .color__group:nth-child(4) label {
+    padding-right: 0;
+    width: 140px;
+  }
+
+  .color__group:nth-child(5) label {
+    padding-right: 0;
+    width: 140px;
+  }
+
+  .color__group:nth-child(6) label {
+    padding-right: 0;
+    width: 140px;
+  }
 }
 
 @media (min-width: $desktop-width) {

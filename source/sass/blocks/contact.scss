@@ -31,15 +31,31 @@
   border-bottom: 2px solid #000000;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 2px solid #62d1ba;
   }
 }
 
-.contact input[type="text"]::-webkit-input-placeholder,
-.contact input[type="text"]::-moz-placeholder,
-.contact input[type="text"]:-ms-input-placeholder {
+.contact__group input[type="text"]::-webkit-input-placeholder {
   font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+  @include normal;
+}
+
+.contact__group input[type="text"]::-moz-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+  @include normal;
+}
+
+.contact__group input[type="text"]:-ms-input-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+  @include normal;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,9 +92,15 @@
   }
 }
 
-.contact input::-webkit-input-placeholder,
-.contact input::-moz-placeholder,
-.contact input:-ms-input-placeholder {
+.contact__group input[type="text"]::-webkit-input-placeholder {
+  font-size: 19px;
+}
+
+.contact__group input[type="text"]::-moz-placeholder {
+  font-size: 19px;
+}
+
+.contact__group input[type="text"]:-ms-input-placeholder {
   font-size: 19px;
 }
 

@@ -21,7 +21,8 @@
   border-bottom: 2px solid #000000;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 2px solid #62d1ba;
   }
 }
@@ -31,6 +32,7 @@
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
+  @include normal;
 }
 
 .mail input[type="email"]::-moz-placeholder {
@@ -38,12 +40,14 @@
   line-height: 18px;
   color: #444444;
   opacity: 0.3;
+  @include normal;
 }
 
 .mail input[type="email"]:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
+  @include normal;
 }
 
 .mail__icon {
@@ -97,8 +101,14 @@ input:focus ~ .mail__icon {
     box-sizing: border-box;
   }
 
-  .mail input[type="email"]::-webkit-input-placeholder,
-  .mail input[type="email"]::-moz-placeholder,
+  .mail input[type="email"]::-webkit-input-placeholder {
+    font-size: 19px;
+  }
+
+  .mail input[type="email"]::-moz-placeholder {
+    font-size: 19px;
+  }
+
   .mail input[type="email"]:-ms-input-placeholder {
     font-size: 19px;
   }
