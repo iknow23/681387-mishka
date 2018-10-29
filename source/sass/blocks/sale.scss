@@ -1,4 +1,6 @@
 .sale {
+  max-width: 320px;
+  margin: 0 auto;
   margin-bottom: 28px;
   padding-bottom: 40px;
   background-image: url("../img/bg-zigzag-line.svg");
@@ -99,6 +101,8 @@
 
 @media (min-width: $tablet-width) {
   .sale {
+    max-width: 768px;
+    margin: 0 auto;
     margin-bottom: 52px;
     padding-bottom: 66px;
   }
@@ -164,7 +168,7 @@
 @media (min-width: $desktop-width) {
   .sale {
     position: relative;
-    width: 1150px;
+    max-width: 1150px;
     margin: 0 auto;
     margin-bottom: 60px;
     padding-bottom: 96px;

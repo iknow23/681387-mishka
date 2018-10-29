@@ -1,5 +1,7 @@
 .contacts {
   position: relative;
+  max-width: 320px;
+  margin: 0 auto;
   color: $main-color;
 }
 
@@ -83,6 +85,8 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
+    max-width: 768px;
+    margin: 0 auto;
     padding-bottom: 56px;
   }
 
@@ -154,6 +158,8 @@
 @media (min-width: $desktop-width) {
   .contacts {
     position: static;
+    max-width: 1150px;
+    margin: 0 auto;
     padding-bottom: 102px;
   }
 
