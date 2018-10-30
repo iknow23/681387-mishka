@@ -7,6 +7,7 @@
 .about-us__title {
   margin: 0;
   margin-left: -2px;
+  margin-bottom: 1px;
   font-size: 25px;
   line-height: 30px;
 }
@@ -67,11 +68,11 @@
   .about-us {
     max-width: 768px;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 59px;
   }
 
   .about-us__title {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     margin-left: -5px;
     margin-top: -3px;
     font-size: 43px;
@@ -86,7 +87,7 @@
 
   .about-us__item {
     width: 334px;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -102,6 +103,7 @@
 
   .about-us__item--like {
     order: 5;
+    background-position: 8px 36px;
   }
 
   .about-us__item--manually {
@@ -110,10 +112,12 @@
 
   .about-us__item--native {
     order: 4;
+    background-position: -3px 34px;
   }
 
   .about-us__item--gift {
     order: 6;
+    background-position: 3px 33px;
   }
 }
 
@@ -140,6 +144,7 @@
 
   .about-us__item {
     width: 350px;
+    margin-bottom: 27px;
   }
 
   .about-us__item--ecology {

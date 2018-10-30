@@ -1,7 +1,7 @@
 .sale {
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 27px;
   padding-bottom: 40px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
@@ -73,7 +73,7 @@
 }
 
 .sale__image {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .sale__price {
@@ -181,6 +181,7 @@
   .sale__header {
     justify-content: flex-start;
     margin-left: -50px;
+    margin-bottom: 49px;
   }
 
   .sale__title {
