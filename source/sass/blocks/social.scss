@@ -1,3 +1,14 @@
+.social--catalog {
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+
+.social--form {
+  margin-left: -3px;
+  padding-top: 12px;
+  padding-bottom: 19px;
+}
+
 .social__list {
   display: flex;
   justify-content: space-between;
@@ -21,6 +32,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social--catalog {
+    padding-top: 0;
+  }
+
+  .social--form {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
   .social__list {
     align-items: center;
     margin-top: -12px;

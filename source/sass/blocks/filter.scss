@@ -1,5 +1,5 @@
 .filter {
-  padding-bottom: 60px;
+  padding-bottom: 57px;
   font-size: 17px;
   line-height: 18px;
 }
@@ -81,6 +81,7 @@
     width: 230px;
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-left: 2px;
   }
 
   .filter__footer {
@@ -92,6 +93,7 @@
   .filter__description {
     order: 1;
     margin: 0;
+    margin-top: -3px;
     font-size: 17px;
     line-height: 30px;
   }

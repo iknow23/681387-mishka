@@ -1,17 +1,17 @@
 .type {
-  margin-bottom: 43px;
+  margin-bottom: 44px;
 }
 
 .type__group {
   margin: 0;
 
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 }
 
 .type__title {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -79,6 +79,10 @@
     margin-right: 149px;
   }
 
+  .type__filter-group {
+    margin-top: -2px;
+  }
+
   .type__input-radio + label::before {
     top: -15px;
     left: -18px;
@@ -117,6 +121,10 @@
   .type__title {
     margin-right: 93px;
     margin-left: 64px;
+  }
+
+  .type__filter-group {
+    margin-top: 0;
   }
 
   .type__group:first-of-type label {

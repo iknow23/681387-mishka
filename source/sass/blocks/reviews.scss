@@ -2,8 +2,16 @@
   max-width: 320px;
   margin: 0 auto;
   margin-bottom: 36px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 50px;
   color: $main-color;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 7px bottom;
+  background-size: contain;
 }
 
 .reviews__title {
@@ -65,10 +73,10 @@
       url("../img/bg-zigzag-line.svg");
     background-repeat:
       no-repeat,
-      no-repeat;
+      repeat-x;
     background-position:
       0 0,
-      bottom;
+      20px bottom;
     background-size:
       auto,
       contain;
@@ -142,10 +150,10 @@
       url("../img/bg-zigzag-line.svg");
     background-repeat:
       no-repeat,
-      no-repeat;
+      repeat-x;
     background-position:
       0 0,
-      bottom;
+      25px bottom;
     background-size:
       auto,
       contain;

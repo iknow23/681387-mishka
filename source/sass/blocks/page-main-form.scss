@@ -1,6 +1,10 @@
+.page-main-form__title-wrapper {
+  margin-bottom: 22px;
+  background-color: #f1f1f1;
+}
+
 .page-main-form__title {
   margin: 0;
-  margin-bottom: 22px;
   padding: 70px 0 76px 0;
   font-size: 27px;
   line-height: 30px;
@@ -8,28 +12,31 @@
   @include bold;
   color: #231f20;
   text-align: center;
-  background-color: #f1f1f1;
 }
 
 .page-main-form__description {
   width: 260px;
   margin: 0 auto;
   margin-bottom: 24px;
+  padding: 0;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
 }
 
 @media (min-width: $tablet-width) {
-  .page-main-form__title {
+  .page-main-form__title-wrapper {
     margin-bottom: 60px;
-    padding: 92px 0 95px 0;
-    font-size: 43px;
-    line-height: 50px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+  }
+
+  .page-main-form__title {
+    padding: 92px 0 95px 0;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .page-main-form__description {
@@ -41,10 +48,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main-form__title-wrapper {
+    margin-bottom: 104px;
+  }
+
   .page-main-form__title {
     width: 1150px;
     margin: 0 auto;
-    margin-bottom: 104px;
     padding-bottom: 120px;
     font-size: 53px;
     line-height: 57px;

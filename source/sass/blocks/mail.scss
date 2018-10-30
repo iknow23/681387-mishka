@@ -3,7 +3,7 @@
 }
 
 .mail__title {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   font-size: 17px;
   line-height: 16px;
   font-weight: bold;
@@ -15,7 +15,8 @@
   display: block;
   width: 100%;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 14px;
+  padding-top: 2px;
   font-size: 17px;
   border: none;
   border-bottom: 2px solid #000000;
@@ -93,7 +94,7 @@ input:focus ~ .mail__icon {
 
   .mail input {
     padding-bottom: 15px;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 18px;
     padding-right: 60px;
     font-size: 19px;
@@ -138,6 +139,10 @@ input:focus ~ .mail__icon {
     margin-right: 0;
     padding-top: 16px;
     padding-left: 0;
+  }
+
+  .mail input {
+    padding: 9px 60px 13px 18px;
   }
 
   .mail__icon {

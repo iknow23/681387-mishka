@@ -12,7 +12,7 @@
 
 .contact__group {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .contact__group label {
@@ -24,7 +24,7 @@
   display: block;
   width: 100%;
   padding: 0;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   font-size: 17px;
   line-height: 18px;
   border: none;
@@ -37,31 +37,45 @@
   }
 }
 
-.contact__group input[type="text"]::-webkit-input-placeholder {
+.contact__group input::-webkit-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
   @include normal;
 }
 
-.contact__group input[type="text"]::-moz-placeholder {
+.contact__group input::-moz-placeholder {
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
   @include normal;
 }
 
-.contact__group input[type="text"]:-ms-input-placeholder {
+// .contact__group input[type="text"]::-moz-placeholder {
+//   font-size: 17px;
+//   line-height: 18px;
+//   opacity: 0.3;
+//   @include normal;
+// }
+
+.contact__group input:-ms-input-placeholder {
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
   @include normal;
 }
+
+// .contact__group input[type="text"]:-ms-input-placeholder {
+//   font-size: 17px;
+//   line-height: 18px;
+//   opacity: 0.3;
+//   @include normal;
+// }
 
 @media (min-width: $tablet-width) {
   .contact {
     margin-bottom: 0;
-    padding-top: 66px;
+    padding-top: 64px;
     padding-bottom: 10px;
   }
 
@@ -113,6 +127,7 @@
 
   .contact__title {
     margin-right: 74px;
+    margin-top: 2px;
   }
 
   .contact__group {
