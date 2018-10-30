@@ -5,6 +5,9 @@
 }
 
 .filter label {
+  font-size: 17px;
+  line-height: 18px;
+
   @include bold;
 }
 
@@ -35,11 +38,6 @@
 
 .filter h3 {
   text-transform: uppercase;
-}
-
-.filter label {
-  font-size: 17px;
-  line-height: 18px;
 }
 
 .filter__description {
