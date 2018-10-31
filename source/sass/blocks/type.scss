@@ -2,6 +2,10 @@
   margin-bottom: 44px;
 }
 
+.type label {
+  outline: none;
+}
+
 .type__group {
   margin: 0;
 
@@ -55,8 +59,10 @@
   opacity: 0.4;
 }
 
-.type__input-radio + label:hover::before,
-.type__input-radio + label:focus::before {
+.type__input-radio:hover + label::before,
+.type__input-radio:focus + label::before,
+.type__input-radio:checked:hover + label::before,
+.type__input-radio:checked:focus + label::before {
   border: 2px solid #62d1ba;
 }
 
