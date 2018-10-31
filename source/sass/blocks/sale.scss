@@ -3,6 +3,8 @@
   margin: 0 auto;
   margin-bottom: 27px;
   padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: 7px bottom;
@@ -10,12 +12,12 @@
 }
 
 .sale__header {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .sale__title {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 
   @include bold;
   font-size: 25px;
@@ -105,6 +107,8 @@
     margin: 0 auto;
     margin-bottom: 54px;
     padding-bottom: 66px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-position: 20px bottom;
   }
 
@@ -176,6 +180,8 @@
     max-width: 1050px;
     margin: 0 auto;
     margin-bottom: 58px;
+    padding: 0;
+    padding-left: 50px;
     padding-bottom: 96px;
     background-position: 25px bottom;
   }
