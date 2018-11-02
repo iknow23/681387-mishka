@@ -198,6 +198,7 @@
 
   .catalog__list {
     display: flex;
+    flex-wrap: wrap;
     width: 1050px;
     min-height: 660px;
   }
@@ -205,7 +206,7 @@
   .catalog__item {
     flex-direction: column;
     justify-content: flex-start;
-    width: 317px;
+    width: 316px;
   }
 
   .catalog__item:nth-child(2) .catalog__product-title {
